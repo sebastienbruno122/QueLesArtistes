@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   resources :artistes, only: [:new, :create, :index, :show, :destroy] do
     resources :nouveautes, only: [:new, :create, :index, :show, :destroy]
+
   end
 end

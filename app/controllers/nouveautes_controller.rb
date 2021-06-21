@@ -1,25 +1,25 @@
 class NouveautesController < ApplicationController
 
   def index
-    @nouveaute = Nouveaute.all
+    @nouveautes = Nouveaute.all
   end
 
   def show
-    @nouveaute = Nouveaute.find(params[:id])
+    @nouveautes = Nouveaute.find(params[:id])
   end
 
   def new
-    @nouveaute = Nouveaute.new
+    @nouveautes = Nouveaute.new
   end
 
   def create
-    @nouveaute = Nouveaute.new(params[:nouveaute])
-    @nouveaute.save
+    @nouveautes = Nouveaute.new(params[:nouveaute])
+    @nouveautes.save
   end
 
   def destroy
-    @nouveaute = Nouveaute.find(params[:id])
-    @nouveaute.save
+    @nouveautes = Nouveaute.find(params[:id])
+    @nouveautes.save
   end
 
     private

@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 2021_06_21_144437) do
-
 
   create_table "artistes", force: :cascade do |t|
     t.string "name"
@@ -21,7 +19,6 @@ ActiveRecord::Schema.define(version: 2021_06_21_144437) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
-
 
   create_table "nouveautes", force: :cascade do |t|
     t.string "citation"
@@ -33,5 +30,4 @@ ActiveRecord::Schema.define(version: 2021_06_21_144437) do
   end
 
   add_foreign_key "nouveautes", "artistes"
-
 end

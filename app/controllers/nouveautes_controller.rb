@@ -9,11 +9,14 @@ class NouveautesController < ApplicationController
   end
 
   def new
+    @artiste = Artiste.find(params[:artiste_id])
     @nouveaute = Nouveaute.new
   end
 
   def create
-    @nouveaute = Nouveaute.new(params[:nouveaute])
+    @nouveaute = Nouveaute.new(nouveaute_params)
+    @artiste = Artiste.find(params[:artiste_id])
+    @nouveaute.artiste = @artiste
     @nouveaute.save
   end
 
@@ -25,7 +28,7 @@ class NouveautesController < ApplicationController
     private
 
   def nouveaute_params
-    params.require(:nouveaute).permit(:citation, :name)
+    params.require(:nouveaute).permit(:name, :citation)
   end
 
 end

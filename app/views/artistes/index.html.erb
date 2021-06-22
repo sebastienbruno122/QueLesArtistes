@@ -1,7 +1,9 @@
-<h1> test</h1>
+ 
 
 <ul>
   <% @artistes.each do |artiste| %>
     <li><%= artiste.name %></li>
+    <li><%= artiste.genre %></li>
+    <li><%= artiste.biography %></li>
   <% end %>
 </ul>

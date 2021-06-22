@@ -1,0 +1,19 @@
+<h1> new</h1>
+
+
+<%= form_for(@artiste) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
+  <%= f.label :biography %>
+  <%= f.text_field :biography %>
+  <%= f.submit %>
+<% end %>
+
+<%= simple_form_for @artiste do |f| %>
+  <%= f.input :name %>
+  <%= f.input :genre %>
+  <%= f.input :biography %>
+  <%= f.button :submit %>
+<% end %>

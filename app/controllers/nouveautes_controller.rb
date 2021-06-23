@@ -13,6 +13,16 @@ class NouveautesController < ApplicationController
     @nouveaute = Nouveaute.new
   end
 
+  def edit
+    @nouveaute = Nouveaute.find(params[:id])
+  end
+
+  def update
+    @nouveaute = Nouveaute.find(params[:id])
+    @nouveaute.update(nouveaute_params)
+    redirect_to artiste_nouveaute_path(@nouveaute)
+  end
+
   def create
     @nouveaute = Nouveaute.new(nouveaute_params)
     @artiste = Artiste.find(params[:artiste_id])
@@ -21,10 +31,11 @@ class NouveautesController < ApplicationController
     redirect_to artiste_nouveautes_path(@nouveaute)
   end
 
+    #DELETE /artistes/:id
   def destroy
     @nouveaute = Nouveaute.find(params[:id])
     @nouveaute.destroy
-    redirect_to artiste_nouveautes_path(@nouveaute)
+    redirect_to artiste_nouveautes_path(@nouveaute.artiste)
 
   end
 

@@ -1,5 +1,6 @@
 
 <%= simple_form_for([@artiste, @nouveaute]) do |f| %>
+  <%= f.input :name %>
   <%= f.input :citation %>
   <%= f.button :submit %>
 <% end %>

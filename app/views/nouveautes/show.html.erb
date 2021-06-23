@@ -1,1 +1,4 @@
 <h1>this is nouveaute show</h1>
+
+
+<%= link_to "supprimer #{@nouveaute.name}", artiste_nouveautes_path(@nouveaute), method: :delete, class: 'btn btn-danger rounded-pill', data: { confirm: 'Êtes vous sûr de vouloir supprimer cette nouveauté ?' } %>

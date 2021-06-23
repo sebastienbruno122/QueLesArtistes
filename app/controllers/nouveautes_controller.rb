@@ -23,7 +23,8 @@ class NouveautesController < ApplicationController
 
   def destroy
     @nouveaute = Nouveaute.find(params[:id])
-    @nouveaute.save
+    @nouveaute.destroy
+    redirect_to artiste_nouveautes_path(@nouveaute)
   end
 
     private

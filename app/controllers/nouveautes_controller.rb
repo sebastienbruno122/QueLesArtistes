@@ -18,6 +18,7 @@ class NouveautesController < ApplicationController
     @artiste = Artiste.find(params[:artiste_id])
     @nouveaute.artiste = @artiste
     @nouveaute.save
+    redirect_to nouveaute_path(@nouveaute)
   end
 
   def destroy

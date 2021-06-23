@@ -9,3 +9,5 @@
 Artiste.create(name: "b2o", genre:"rap", biography:"boss du 92i")
 Artiste.create(name: "Kaaris", genre:"rnb", biography:"boss de Sevran")
 Artiste.create(name: "Vianney", genre:"variété", biography:"fragil")
+Nouveaute.create(name: "sosomanes", citation:"zumba kafew")
+

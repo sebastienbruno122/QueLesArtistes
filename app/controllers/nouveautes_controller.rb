@@ -23,7 +23,7 @@ class NouveautesController < ApplicationController
 
   def destroy
     @nouveaute = Nouveaute.find(params[:id])
-    @nouveaute.save
+    @nouveaute.destroy
   end
 
     private

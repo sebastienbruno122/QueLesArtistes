@@ -36,7 +36,6 @@ class NouveautesController < ApplicationController
     @nouveaute = Nouveaute.find(params[:id])
     @nouveaute.destroy
     redirect_to artiste_nouveautes_path(@nouveaute.artiste)
-
   end
 
     private

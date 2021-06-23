@@ -1,5 +1,15 @@
 <h1> show</h1>
 
-<h2><%= @artiste.name %></h2>
-<p><%= @artiste.genre %></p>
-<p><%= @artiste.biography %></p>
+<div>
+  <h2><%= @artiste.name %></h2>
+  <p><%= @artiste.genre %></p>
+  <p><%= @artiste.biography %></p>
+</div>
+
+<div>
+  <%= link_to "edit", edit_artiste_path %>
+</div>
+
+<div>
+  <%= link_to "back to list", artistes_path %>
+</div>

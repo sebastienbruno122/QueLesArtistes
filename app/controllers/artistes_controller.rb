@@ -12,23 +12,26 @@ class ArtistesController < ApplicationController
     @artiste = Artiste.new
   end
 
-
   def create
     @artiste = Artiste.new(artiste_params)
     @artiste.save
-
-    # no need for app/views/artistes/create.html.erb
     redirect_to artiste_path(@artiste)
-    #@artiste = create(params[:artiste])
   end
 
   def edit
-    @artiste = Artiste.find(params[:artiste])
+    @artiste = Artiste.find(params[:id])
   end
 
   def update
     @artiste = Artiste.find(params[:id])
-    @artiste = update(params[:artiste])
+    @artiste.update(artiste_params)
+    redirect_to artiste_path(@artiste)
+  end
+
+  def destroy
+    @artiste = Artiste.find(params[:id])
+    @artiste.destroy
+    redirect_to artistes_path
   end
 
 

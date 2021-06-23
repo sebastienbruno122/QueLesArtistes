@@ -12,7 +12,7 @@
       <li><%= artiste.genre %></li>
       <li><%= artiste.biography %></li>
       <%= link_to "Allez voir #{artiste.name}", artiste_path(artiste) %>
-      <%= link_to "delete", artiste_path(artiste), method: :delete %>
+      <%= link_to "delete", artiste_path(artiste), method: :delete, data: {confirm: "Are you sure?"}%>
     </div>
     <% end %>
   </ul>

@@ -1,0 +1,9 @@
+<h1>Nouveaute new</h1>
+
+<%= simple_form_for(@nouveaute) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :citation %>
+  <%= f.text_field :citation %>
+  <%= f.submit %>
+<% end %>

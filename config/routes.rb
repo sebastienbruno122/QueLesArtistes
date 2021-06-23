@@ -4,5 +4,3 @@ resources :artistes do
   resources :nouveautes
   end
 end
-
-

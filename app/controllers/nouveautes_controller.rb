@@ -15,6 +15,7 @@ class NouveautesController < ApplicationController
   def create
     @nouveaute = Nouveaute.new(params[:nouveaute])
     @nouveaute.save
+    redirect_to nouveaute_path(@nouveaute)
   end
 
   def destroy

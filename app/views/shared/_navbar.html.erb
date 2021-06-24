@@ -1,5 +1,5 @@
 <div class="navbar transparent navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "logo-navbar" do %>
+  <%= link_to "/", class: "logo-navbar" do %>
     <%= image_tag "LOGO.png", class: "logo-navbar"%>
   <% end %>
 
@@ -14,10 +14,10 @@
         <%= link_to "Ce que l'on fait", "#", class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Nouveautés", "artiste_nouveautes_path", class: "nav-link" %>
+        <%= link_to "Nouveautés", artistes_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Les artistes", "artistes_path", class: "nav-link" %>
+        <%= link_to "Les artistes", artistes_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
         <%= link_to "À propos", "#", class: "nav-link" %>

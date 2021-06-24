@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_21_144437) do
+ActiveRecord::Schema.define(version: 2021_06_24_142240) do
 
   create_table "artistes", force: :cascade do |t|
     t.string "name"
@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 2021_06_21_144437) do
 
   create_table "nouveautes", force: :cascade do |t|
     t.string "citation"
-    t.string "name"
     t.integer "artiste_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

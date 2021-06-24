@@ -1,4 +1,14 @@
 <h1>this is nouveaute show</h1>
 
+<div>
+  <h2><%= @nouveaute.name %></h2>
+  <p><%= @nouveaute.citation %></p>
+</div>
 
-<%= link_to "supprimer nouveauté de #{@nouveaute.name}", nouveaute_path(@nouveaute), method: :delete, class: 'btn btn-danger rounded-pill', data: { confirm: 'Êtes vous sûr de vouloir supprimer cette nouveauté ?' } %>
+<div>
+  <%= link_to "edit", edit_artiste_nouveaute_path, class: "btn btn-warning" %>
+</div>
+
+<div>
+  <%= link_to "back to list", artiste_nouveautes_path, class: "btn btn-primary" %>
+</div>

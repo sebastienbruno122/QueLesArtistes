@@ -6,10 +6,8 @@
     <% @nouveautes.each do |nouveaute| %>
       <h2><strong><%= link_to nouveaute.name, artiste_nouveautes_path(nouveaute) %></strong></h2>
       <p><%= nouveaute.citation %></p>
-      <%= link_to "allez voir", artiste_nouveautes_path(nouveaute), class: 'btn btn-primary' %>
+      <%= link_to "allez voir", artiste_nouveaute_path(nouveaute), class: 'btn btn-primary' %>
       <%= link_to "Supprimer", artiste_nouveautes_path(nouveaute), method: :delete, class: 'btn btn-danger' %>
-      <%# <%= link_to "edit", edit_artiste_nouveautes_path(nouveaute) %>
-
     <% end %>
   </ul>
 </div>

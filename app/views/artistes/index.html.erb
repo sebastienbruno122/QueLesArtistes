@@ -8,11 +8,11 @@
   <ul>
     <% @artistes.each do |artiste| %>
     <div>
-      <li><%= artiste.name %></li>
+      <li><strong><%= artiste.name %></strong></li>
       <li><%= artiste.genre %></li>
       <li><%= artiste.biography %></li>
-      <%= link_to "Allez voir #{artiste.name}", artiste_path(artiste) %>
-      <%= link_to "delete", artiste_path(artiste), method: :delete %>
+      <%= link_to "Allez voir: #{artiste.name}", artiste_path(artiste),class: 'btn btn-primary' %>
+      <%= link_to "delete", artiste_path(artiste), method: :delete, class: 'btn btn-primary' %>
     </div>
     <% end %>
   </ul>

@@ -14,3 +14,7 @@ artiste3 = Artiste.create(name: "Sia", genre:"Pop", biography:"Sia Furler, dite 
 artiste4 = Artiste.create(name: "Madonna", genre:"Pop", biography:"Madonna Louise Ciccone is an American singer, songwriter, and actress. Referred to as the 'Queen of por' she is regarded as one of the most significant figures in popular culture.")
 artiste5 = Artiste.create(name: "Michael Jackson", genre:"Pop", biography:"Michael Joseph Jackson was an American singer, songwriter, and dancer. Dubbed the 'King of Pop', he is regarded as one of the most significant cultural figures of the 20th century.")
 artiste6 = Artiste.create(name: "Heuss l'Enfoiré", genre:"Rap", biography:"Heuss l'Enfoiré, ou simplement Heuss, pseudonyme de Karim Djeriou né le 11 août 1992 à Gennevilliers, dans les Hauts-de-Seine, est un rappeur français.")
+
+
+nouveaute1 = Nouveaute.create()
+

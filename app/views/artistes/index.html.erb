@@ -9,7 +9,7 @@
   <ul>
     <% @artistes.each do |artiste| %>
     <div>
-      <li><%= artiste.name %></li>
+      <li><%= artiste.name %> - id: <%= artiste.id %></li>
       <li><%= artiste.genre %></li>
       <li><%= artiste.biography %></li>
       <%= link_to "Allez voir #{artiste.name}", artiste_path(artiste) %>

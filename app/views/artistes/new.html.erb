@@ -1,8 +1,13 @@
 <h1> new</h1>
-
-<%= simple_form_for @artiste do |f| %>
-  <%= f.input :name %>
-  <%= f.input :genre %>
-  <%= f.input :biography %>
-  <%= f.button :submit %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <%= simple_form_for @artiste do |f| %>
+        <%= f.input :name %>
+        <%= f.input :genre %>
+        <%= f.input :biography %>
+        <%= f.submit "Create" %>
+      <% end %>
+    </div>
+  </div>
+</div>

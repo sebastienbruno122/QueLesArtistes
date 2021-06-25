@@ -1,15 +1,19 @@
 <h1>this is nouveaute show</h1>
 
 <div>
+
    <%# Il faut que le nom de l'artiste apparaisse  %>
   <%# <h2><%= @nouveaute.id.name %>
+
   <p><%= @nouveaute.citation %></p>
 </div>
 
 <div>
   <%= link_to "edit", edit_artiste_nouveaute_path, class: "btn btn-warning" %>
 </div>
-
+<div>
+  <%= link_to "Supprimer", nouveaute_path, method: :delete, class: 'btn btn-danger' %>
+</div>
 <div>
   <%= link_to "back to list", artiste_nouveautes_path, class: "btn btn-primary" %>
 </div>

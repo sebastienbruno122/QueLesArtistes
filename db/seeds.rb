@@ -29,4 +29,5 @@ nouveaute6 = Nouveaute.create(citation: "Tu me dis que tu es mon frère au parlo
 nouveaute7 = Nouveaute.create(citation: "Mais elle est où la mulaga", artiste_id: 6)
 nouveaute8 = Nouveaute.create(citation: "Belle Demoiselle qui se presse dans l'allée", artiste_id: artiste2.id)
 
+
 puts "Good job, seed is ready :)"

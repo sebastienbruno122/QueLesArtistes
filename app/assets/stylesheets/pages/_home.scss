@@ -2,8 +2,12 @@ body {
   background-color: #FFEAED;
 }
 
+h1 {
+  padding-left: 110px;
+}
+
 .sub-title {
-  padding-left: 165px;
+  padding-left: 288px;
 
 }
 
@@ -21,4 +25,21 @@ body {
   height: 137px;
   left: 889px;
   top: 266px;
+}
+
+.what-we-do-title {
+  padding-top: 660px;
+  padding-left: 70px;
+}
+
+.WWD {
+  padding-left: 120px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.wwd-text {
+  width: 980px;
+  padding-left: 485px;
+  position: absolute;
 }

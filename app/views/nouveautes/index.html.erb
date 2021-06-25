@@ -5,6 +5,7 @@
   <ul>
     <% @nouveautes.each do |nouveaute| %>
       <%# <h2><strong><%= "#{@artistes.name}" %>
+
       <p><%= nouveaute.citation %></p>
       <%= link_to "aller voir", artiste_nouveautes_path(nouveaute), class: 'btn btn-primary' %>
       <%= link_to "Supprimer", nouveaute_path(nouveaute), method: :delete, class: 'btn btn-danger' %>

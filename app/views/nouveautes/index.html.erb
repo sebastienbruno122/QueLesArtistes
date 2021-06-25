@@ -1,7 +1,6 @@
 
 <div class="container">
 <h1>Les dernières nouveautés</h1>
-<%= link_to "ajouter une nouveauté", new_artiste_nouveaute_path , class: 'btn btn-success'%>
   <ul>
     <% @nouveautes.each do |nouveaute| %>
       <%# <h2><strong><%= "#{@artistes.name}" %>

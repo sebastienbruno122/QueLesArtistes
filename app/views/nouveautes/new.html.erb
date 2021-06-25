@@ -1,7 +1,7 @@
 <div class="container">
   <%= simple_form_for([@artiste, @nouveaute]) do |f| %>
-    <%= f.input :citation %>
-    <%= f.button :submit %>
+    <%= f.input :citation, placeholder: "Écrit ta citation"%>
+    <%= f.button :submit, "Ajouter la citation"%>
   <% end %>
   <%= link_to "Retour", artiste_nouveautes_path(), class: 'btn btn-primary' %>
 </div>

@@ -13,6 +13,9 @@
             <li class="list-group-item"><%= nouveaute.citation %></li>
           <% end %>
           <%= link_to "create citation", new_artiste_nouveaute_path(@artiste), class: 'btn btn-primary' %>
+        <div>
+            <%= render "nouveautes/list", nouveautes: @artiste.nouveautes %>
+        </div>
 
       </div>
     </div>

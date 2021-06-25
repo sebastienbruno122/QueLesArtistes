@@ -1,7 +1,13 @@
 <div class="container">
-  <%= simple_form_for([@artiste, @nouveaute]) do |f| %>
-    <%= f.input :citation %>
-    <%= f.button :submit %>
-  <% end %>
-  <%= link_to "Retour", artiste_nouveautes_path(), class: 'btn btn-primary' %>
+  <div class="row">
+    <div class="col-6 offset-3">
+        <%= simple_form_for([@artiste, @nouveaute]) do |f| %>
+          <%= f.input :citation %>
+          <%= f.submit "create" %>
+        <% end %>
+   </div>
+  </div>
 </div>
+  <%= link_to "Retour", artiste_nouveautes_path(), class: 'btn btn-light' %>
+
+

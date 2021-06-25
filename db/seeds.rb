@@ -16,5 +16,5 @@ artiste5 = Artiste.create(name: "Michael Jackson", genre:"Pop", biography:"Micha
 artiste6 = Artiste.create(name: "Heuss l'Enfoiré", genre:"Rap", biography:"Heuss l'Enfoiré, ou simplement Heuss, pseudonyme de Karim Djeriou né le 11 août 1992 à Gennevilliers, dans les Hauts-de-Seine, est un rappeur français.")
 
 
-nouveaute1 = Nouveaute.create()
+nouveaute1 = Nouveaute.create(citation: "j'aime les pates")
 

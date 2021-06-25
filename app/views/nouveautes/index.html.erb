@@ -1,19 +1,21 @@
 
 <div class="container">
-<h1>Les dernières nouveautés</h1>
-<%= link_to "ajouter une nouveauté", new_artiste_nouveaute_path , class: 'btn btn-success'%>
-  <ul>
-    <% @nouveautes.each do |nouveaute| %>
-      <%# <h2><strong><%= "#{@artistes.name}" %>
+  <h1>Les dernières nouveautés</h1>
+    <ul>
 
-      <p><%= nouveaute.citation %></p>
-      <%= link_to "aller voir", artiste_nouveautes_path(nouveaute), class: 'btn btn-primary' %>
-      <%= link_to "Supprimer", nouveaute_path(nouveaute), method: :delete, class: 'btn btn-danger' %>
-    <% end %>
-  </ul>
+      <% @nouveautes.map do |nouveaute| %>
+
+        <p><%= Nouveaute.last(3)[0][:citation]%></p>
+        <p><%= Nouveaute.last(3)[1][:citation]%></p>
+        <p><%= Nouveaute.last(3)[2][:citation]%></p>
+
+
+       <%# <p><%= nouveaute.citation %>
+        <%= link_to "Supprimer", nouveaute_path(nouveaute), method: :delete, class: 'btn btn-danger' %>
+      <% end %>
+    </ul>
 </div>
 
-
-
+      <%# <%= link_to "aller voir", artiste_nouveautes_path(nouveaute), class: 'btn btn-primary' %>
 
 

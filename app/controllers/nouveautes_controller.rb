@@ -2,6 +2,7 @@ class NouveautesController < ApplicationController
 
   def index
     @nouveautes = Nouveaute.all
+    @nouveautes = policy_scope(Nouveaute).order(created_at: :desc)
   end
 
   def show

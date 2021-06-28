@@ -10,12 +10,14 @@ class ArtistesController < ApplicationController
 
   def new
     @artiste = Artiste.new
+    authorize @artiste
   end
 
   def create
     @artiste = Artiste.new(artiste_params)
     @artiste.save
     redirect_to artiste_path(@artiste)
+    authorize @artiste
   end
 
   def edit

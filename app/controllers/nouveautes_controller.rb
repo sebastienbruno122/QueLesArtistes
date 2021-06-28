@@ -14,14 +14,14 @@ class NouveautesController < ApplicationController
   end
 
   def edit
-    @nouveaute = Nouveaute.find(params[:artiste_id])
+    @nouveaute = Nouveaute.find(params[:id])
   end
 
   def update
-    @artiste = Artiste.find(params[:id][:artiste_id])
+    # @artiste = Artiste.find(params[:artiste_id])
     @nouveaute = Nouveaute.find(params[:id])
     @nouveaute.update(nouveaute_params)
-    redirect_to artiste_nouveaute_path(@nouveaute)
+    redirect_to artiste_path(@nouveaute.artiste)
   end
 
   def create

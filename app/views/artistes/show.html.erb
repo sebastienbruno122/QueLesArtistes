@@ -1,0 +1,30 @@
+<h1> show</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <div>
+        <h2><%= @artiste.name %></h2>
+        <p><%= @artiste.genre %></p>
+        <p><%= @artiste.biography %></p>
+         <%= link_to "edit", edit_artiste_path , class: 'btn btn-primary'%>
+        <h5> Citation(nouveautés)</h5>
+        <ul>
+          <% @artiste.nouveautes.each do |nouveaute| %>
+            <li class="list-group-item"><%= nouveaute.citation %></li>
+          <% end %>
+          <%= link_to "create citation", new_artiste_nouveaute_path(@artiste), class: 'btn btn-primary' %>
+        <div>
+            <%= render "nouveautes/list", nouveautes: @artiste.nouveautes %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+</div>
+
+<div>
+  <%= link_to "back to list", artistes_path, class: 'btn btn-light' %>
+</div>

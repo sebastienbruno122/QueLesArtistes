@@ -1,0 +1,18 @@
+ <h1>index</h1>
+
+<div class="btn btn-light">
+<%= link_to "Add new artiste", new_artiste_path %>
+</div>
+<div>
+  <ul>
+    <% @artistes.each do |artiste| %>
+    <div>
+      <li><%= artiste.name %> - id: <%= artiste.id %></li>
+      <li><%= artiste.genre %></li>
+      <li><%= artiste.biography %></li>
+      <%= link_to "Allez voir #{artiste.name}", artiste_path(artiste) %>
+      <%= link_to "delete", artiste_path(artiste), method: :delete %>
+    </div>
+    <% end %>
+  </ul>
+</div>

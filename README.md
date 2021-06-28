@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# QueLesArtistes
+=======
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +25,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+>>>>>>> 77db8de45f1349fd1c01213316d74dccdbb69912

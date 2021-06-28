@@ -1,7 +1,7 @@
 <h1> edit</h1>
 
 <div>
-<%= simple_form_for([@artiste, @nouveaute]) do |f| %>
+<%= simple_form_for(@nouveaute) do |f| %>
   <%= f.input :citation %>
   <%= f.submit "Update" %>
 <% end %>

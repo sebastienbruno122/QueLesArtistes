@@ -4,13 +4,17 @@ class NouveautePolicy < ApplicationPolicy
       scope.all
     end
 
-    def resolve
-      scope.all
-    end
+# def index?
+#     true
+#   end
 
-    def create?
-      return true
-    end
+#   def create?
+#     true
+#   end
+
+#   def destroy?
+#     true
+#   end
 
   end
 end

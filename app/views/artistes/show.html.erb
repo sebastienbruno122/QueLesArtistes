@@ -10,8 +10,8 @@
         <%= cl_image_tag @artiste.photo.key, height: 600, width: 400, crop: :fill %>
         <% end %>
         <% if user_signed_in? %>
-         <% end %>
          <%= link_to "edit", edit_artiste_path , class: 'btn btn-primary'%>
+         <% end %>
         <h5> Citation(nouveautés)</h5>
         <ul>
           <% @artiste.nouveautes.each do |nouveaute| %>

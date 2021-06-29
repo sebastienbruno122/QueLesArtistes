@@ -6,15 +6,19 @@
         <h2><%= @artiste.name %></h2>
         <p><%= @artiste.genre %></p>
         <p><%= @artiste.biography %></p>
+        <% if user_signed_in? %>
          <%= link_to "edit", edit_artiste_path , class: 'btn btn-primary'%>
+         <% end %>
         <h5> Citation(nouveautés)</h5>
         <ul>
           <% @artiste.nouveautes.each do |nouveaute| %>
             <li class="list-group-item"><%= nouveaute.citation %></li>
           <% end %>
+          <% if user_signed_in? %>
           <%= link_to "create citation", new_artiste_nouveaute_path(@artiste), class: 'btn btn-primary' %>
         <div>
             <%= render "nouveautes/list", nouveautes: @artiste.nouveautes %>
+          <% end %>
         </div>
 
       </div>

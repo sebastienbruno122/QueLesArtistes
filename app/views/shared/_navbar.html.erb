@@ -29,22 +29,5 @@
       </li>
     </ul>
   </div>
-<div>
-    <ul class="navbar-nav mr-auto ">
 
-      <% if user_signed_in? %>
-
-        <li class="nav-item dropdown ">
-          <div>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-primary" %>
-          </div>
-          </div>
-        </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Login / Register", new_user_session_path, class: "btn btn-primary" %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
 </div>

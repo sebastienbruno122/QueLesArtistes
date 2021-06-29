@@ -1,8 +1,4 @@
 class ArtistesController < ApplicationController
-# skip_before_action :authenticate_user!, only: :index
-# skip_before_action :authenticate_user!, only: :show
-# skip_before_action :authenticate_user!, only: :show
-# skip_before_action :authenticate_user!, only: :destroy
 
   def index
     @artistes = Artiste.all
@@ -14,14 +10,12 @@ class ArtistesController < ApplicationController
 
   def new
     @artiste = Artiste.new
-    # authorize @artiste
   end
 
   def create
     @artiste = Artiste.new(artiste_params)
     @artiste.save
     redirect_to artiste_path(@artiste)
-    # authorize @artiste
   end
 
   def edit

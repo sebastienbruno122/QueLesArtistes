@@ -1,9 +1,5 @@
 class NouveautesController < ApplicationController
-  # skip_before_action :authenticate_user!, only: :home
-  # skip_before_action :authenticate_user!, only: :index
-  # skip_before_action :authenticate_user!, only: :new
-  # skip_before_action :authenticate_user!, only: :show
-  # skip_before_action :authenticate_user!, only: :edit
+
   def index
     @nouveautes = Nouveaute.all
 

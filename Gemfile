@@ -29,7 +29,6 @@ gem 'simple_form'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'simple_form'
 gem 'font-awesome-sass'
-gem 'social-share-button'
 gem 'devise'
 gem 'pundit'
 gem 'cloudinary', '~> 1.16.0'

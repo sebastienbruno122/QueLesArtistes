@@ -6,6 +6,7 @@
         <h2><%= @artiste.name %></h2>
         <p><%= @artiste.genre %></p>
         <p><%= @artiste.biography %></p>
+        <%= cl_image_tag @artiste.photo.key, height: 600, width: 400, crop: :fill %>
         <% if user_signed_in? %>
          <%= link_to "edit", edit_artiste_path , class: 'btn btn-primary'%>
          <% end %>

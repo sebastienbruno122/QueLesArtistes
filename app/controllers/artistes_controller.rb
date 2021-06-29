@@ -38,6 +38,6 @@ class ArtistesController < ApplicationController
   private
 
   def artiste_params
-    params.require(:artiste).permit(:name, :genre, :biography)
+    params.require(:artiste).permit(:name, :genre, :biography, :photo)
   end
 end

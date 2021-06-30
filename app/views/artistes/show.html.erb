@@ -12,9 +12,7 @@
         <% if user_signed_in? %>
          <%= link_to "edit", edit_artiste_path , class: 'btn btn-primary'%>
         <% end %>
-        <% if user_signed_in? %>
-          <%= render "nouveautes/list", nouveautes: @artiste.nouveautes %>
-          <% end %>
+          <%= render "nouveautes/citations", nouveautes: @artiste.nouveautes %>
         </div>
 
       </div>

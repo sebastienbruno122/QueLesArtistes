@@ -1,10 +1,10 @@
-<h5> Citation(nouveautés)</h5>
- <ul>
-  <% nouveautes.each do |nouveaute| %>
-  <li class="list-group-item"><%= nouveaute.citation %> id: <%= nouveaute.id %> 
-  <%= link_to "Supprimer", nouveaute_path(nouveaute), method: :delete, class: 'btn btn-danger' %> 
-  <%= link_to "edit", edit_nouveaute_path(nouveaute), class: 'btn btn-light' %></li>
-  <% end %>
-  <%= link_to "create citation", new_artiste_nouveaute_path(@artiste), class: 'btn btn-primary' %>
-  </ul>
+<div>
+    <h5> Citation(nouveautés)</h5>
+        <% nouveautes.each do |nouveaute| %>
+        <li class="list-group-item"><%= nouveaute.citation %> id: <%= nouveaute.id %> 
+        <%= link_to "Supprimer", nouveaute_path(nouveaute), method: :delete, class: 'btn btn-danger' %> 
+        <%= link_to "edit", edit_nouveaute_path(nouveaute), class: 'btn btn-light' %></li>
+        <% end %>
+        <%= link_to "create citation", new_artiste_nouveaute_path(@artiste), class: 'btn btn-primary' %>
+<div>
 

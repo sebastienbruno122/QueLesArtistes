@@ -8,9 +8,9 @@
   </div>
   <div class="cards-index">
       <% @artistes.each do |artiste| %>
-        <%= link_to artiste_path(artiste), class: "text-decoration-none text-light" do %>
+        <%= link_to artiste_path(artiste), class: "text-decoration-none" do %>
         <div class="card-trip mb-3">
-          <div class="card-info ">
+          <div class="card-info p-2">
            <h2> <%= artiste.name %></h2>
            <h4> <%= artiste.genre %></h4>
           </div>

@@ -11,11 +11,11 @@
   background-color: white;
   border-radius: 2%;
   width: 20%;
+  transition: transform .3s ease-in-out;
+  a{color: white;
+  }
 }
 
-.card-trip {
-  transition: transform .7s ease-in-out;
-}
 .card-trip:hover {
   transform: rotate(3deg);
 }

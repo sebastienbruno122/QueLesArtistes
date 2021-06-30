@@ -1,23 +1,24 @@
- <h1>index</h1>
 
-<div>
-<% if user_signed_in? %>
-<%= link_to "Add new artiste", new_artiste_path %>
-<% end %>
-</div>
-<div>
-  <ul>
-    <% @artistes.each do |artiste| %>
-    <div>
-      <li><%= artiste.name %> - id: <%= artiste.id %></li>
-      <li><%= artiste.genre %></li>
-      <li><%= artiste.biography %></li>
-        <%= link_to "Allez voir #{artiste.name}", artiste_path(artiste) %>
-      <% if user_signed_in? %>
-        <%= link_to "delete", artiste_path(artiste), method: :delete %>
-        <% end %>
-    </div>
-    <% end %>
-  </ul>
-</div>
 
+<div class="container">
+  <div>
+  <% if user_signed_in? %>
+  <%= link_to "Add new artiste", new_artiste_path %>
+  <% end %>
+  </div>
+  <div>
+    <ul>
+      <% @artistes.each do |artiste| %>
+      <div>
+        <li><%= artiste.name %> - id: <%= artiste.id %></li>
+        <li><%= artiste.genre %></li>
+        <li><%= artiste.biography %></li>
+          <%= link_to "Allez voir #{artiste.name}", artiste_path(artiste) %>
+        <% if user_signed_in? %>
+          <%= link_to "delete", artiste_path(artiste), method: :delete %>
+          <% end %>
+      </div>
+      <% end %>
+    </ul>
+  </div>
+</div>

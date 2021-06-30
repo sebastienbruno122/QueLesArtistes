@@ -9,6 +9,9 @@
         <% if @artiste.photo.attached? %>
         <%= cl_image_tag @artiste.photo.key, height: 600, width: 400, crop: :fill %>
         <% end %>
+        <div>
+          <a href="<%= @artiste.youtube_link  %>" target="_blank">Youtube video</a>
+        </div>
         <% if user_signed_in? %>
          <%= link_to "edit", edit_artiste_path , class: 'btn btn-primary'%>
         <% end %>

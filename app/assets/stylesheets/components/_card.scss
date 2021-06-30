@@ -1,0 +1,39 @@
+.card-trip {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: white;
+  border-radius: 2%;
+  width: 20%;
+}
+
+.card-trip {
+  transition: transform .7s ease-in-out;
+}
+.card-trip:hover {
+  transform: rotate(3deg);
+}
+
+.card-trip img {
+  border-radius: 2%;
+}
+
+.card-info {
+  position: absolute;
+}
+
+.cards-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  position: relative;
+  margin: 65px;
+  margin-left: 186px;
+}
+

@@ -3,17 +3,11 @@
   <h1>Les dernières nouveautés</h1>
   
   <% @nouveautes.each do |nouveaute| %>
-  <%=  nouveaute.citation%>
-  <%end  %>
-    
-
-
-
-        <p><%= @nouveautes.last(3)[0].citation%></p>
-        <p><%= @nouveautes.last(3)[1].citation%></p>
-        <p><%= @nouveautes.last(3)[2].citation%></p>
-
-
+  <div> <%=  nouveaute.citation%> </div>
+  <% end  %>
+<div>
+   <%= render "nouveautes/last3citations", nouveautes: @nouveautes %>
+</div>
        <%# <p><%= nouveaute.citation %>
 </div>
 

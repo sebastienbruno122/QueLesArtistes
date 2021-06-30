@@ -26,16 +26,17 @@ h1 {
 
 .text-size {
   position: absolute;
-  width: 300px;
+  width: 440px;
   height: 137px;
-  left: 889px;
-  top: 266px;
-  font-size: 18px;
+  left: 850px;
+  // top: 266px;
+  font-size: 24px;
+  margin-top: -100px;
 }
 
 .what-we-do-title {
-  padding-top: 660px;
   padding-left: 70px;
+  // padding-top: 660px;
 }
 
 .WWD {
@@ -46,7 +47,7 @@ h1 {
 
 .wwd-text {
   height: 117px;
-  width: 445px;
+  width: 480px;
   position: relative;
   bottom: 235px;
   left: 550px;
@@ -58,3 +59,56 @@ h1 {
   font-size: 64px;
 }
 
+.youtube-home {
+  position: relative;
+  left: 240px;
+  border-radius: 25%;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  height: 320px;
+  width: 480px;
+}
+
+.line-1 {
+  font-family: "Open Sans";
+  text-align: center;
+  position: absolute;
+  width: fit-content;
+  margin: 0 auto;
+  bottom: 75%;
+  left: 69%;
+}
+
+.line-1:before {
+  content: "";
+  height: 2px;
+  width: 375px;
+  background: #9f3346;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.line-2 {
+  font-family: "Open Sans";
+  text-align: center;
+  position: absolute;
+  width: fit-content;
+  margin: 0 auto;
+  bottom: 73%;
+  left: 69%;
+}
+
+.line-2:before {
+  content: "";
+  height: 2px;
+  width: 230px;
+  background: #9f3346;
+  position: absolute;
+  left: 105px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}

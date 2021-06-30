@@ -1,24 +1,26 @@
-
-
 <div class="container">
   <div>
   <% if user_signed_in? %>
   <%= link_to "Add new artiste", new_artiste_path %>
   <% end %>
   </div>
-  <div>
-    <ul>
+  <div class="cards-index">
       <% @artistes.each do |artiste| %>
-      <div>
-        <li><%= artiste.name %> - id: <%= artiste.id %></li>
-        <li><%= artiste.genre %></li>
-        <li><%= artiste.biography %></li>
-          <%= link_to "Allez voir #{artiste.name}", artiste_path(artiste) %>
-        <% if user_signed_in? %>
-          <%= link_to "delete", artiste_path(artiste), method: :delete %>
-          <% end %>
-      </div>
+        <%= link_to artiste_path(artiste), class: "text-decoration-none text-light" do %>
+        <div class="card-trip mb-3">
+          <div class="card-info ">
+           <h2> <%= artiste.name %></h2>
+           <h4> <%= artiste.genre %></h4>
+          </div>
+            <% if artiste.photo.attached? %>
+            <%= cl_image_tag artiste.photo.key, height: 300, width: 300, crop: :fill %>
+            <% end %>
+            <% if user_signed_in? %>
+              <%= link_to "delete", artiste_path(artiste), method: :delete %>
+              <% end %>
+              <% end %>
+         </div>
       <% end %>
-    </ul>
   </div>
 </div>
+

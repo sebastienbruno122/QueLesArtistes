@@ -12,29 +12,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-      <strong><%= link_to "#", class: "nav-link nav-title" do  %></strong>
-       <div class="tab-underlined ">Ce que l'on fait</div>
-       <% end %>
+      <strong><%= link_to "Ce que l'on fait", "#", class: "nav-link nav-title tab-underlined text-dark" %></strong>
       </li>
       <li class="nav-item">
-        <strong><%= link_to nouveautes_path, class: "nav-link nav-title" do %></strong>
-        <div class="tab-underlined ">Nouveautés</div>
-        <% end %>
+        <strong><%= link_to "Nouveautés", nouveautes_path, class: "nav-link nav-title text-dark" %></strong>
       </li>
       <li class="nav-item">
-        <strong><%= link_to artistes_path, class: "nav-link nav-title" do %></strong>
-        <div class="tab-underlined ">Les artistes</div>
-        <% end %>
+        <strong><%= link_to "Les artistes", artistes_path, class: "nav-link nav-title text-dark" %></strong>
       </li>
       <li class="nav-item">
-        <strong><%= link_to artistes_path, class: "nav-link nav-title" do %></strong>
-        <div class="tab-underlined ">À propos</div>
-        <% end %>
+        <strong><%= link_to "À propos", artistes_path, class: "nav-link nav-title text-dark" %></strong>
       </li>
        <li class="nav-item">
-        <strong><%= link_to artistes_path, class: "nav-link nav-title" do %></strong>
-        <div class="tab-underlined ">Contact</div>
-        <% end %>
+        <strong><%= link_to "Contact", artistes_path, class: "nav-link nav-title text-dark" %></strong>
       </li>
       </li>
     </ul>

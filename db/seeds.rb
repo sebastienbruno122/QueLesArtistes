@@ -10,14 +10,14 @@ puts "Time to create stuff..."
 
 puts "Time to create artistes..."
 
-file1 = URI.open("https://cdn.radiofrance.fr/s3/cruiser-production/2020/11/50a43a42-2380-4d5d-8e2c-e9b8f382d416/1200x680_booba_01072020_miami_gqfrance_paridukovic_0303.jpg")
+file1 = URI.open("http://res.cloudinary.com/dqm9bn33k/image/upload/v1625131548/e1db90lhkohuxuuihuqd.png")
 file2 = URI.open("https://img.nrj.fr/uv2BYyvWSCae0DQagdkQBIwFwjA=/https://image-api.nrj.fr/medias/2019/09/christophe-mae-presente-le-clip-de-les-gens_5d8a3e7b6c690.jpg")
 file3 = URI.open("https://img.20mn.fr/utDn82yhQvSTlKbI1UU91Q/830x532_chanteuse-sia.jpg")
 file4 = URI.open("https://www.objeko.com/wp-content/uploads/2021/06/madonna-62-ans-se-devoile-en-sous-vetements-la-star-a-trop-abuse-de-la-chirurgie-esthetique.jpg")
 file5 = URI.open("https://media.vogue.fr/photos/5f23e65ba806c0ec57bc13e6/3:2/w_755,h_503,c_limit/thriller-758x758.jpg")
 file6 = URI.open("https://images.sk-static.com/images/media/profile_images/artists/10010069/huge_avatar")
 
-artiste1 = Artiste.create(name: "Booba", genre:"Rap", youtube_link:"https://www.youtube.com/watch?v=Cp9pk-FkE6E&ab_channel=B20baOfficiel", biography:"Booba, de son vrai nom Élie Yaffa, né le 9 décembre 1976 à Boulogne-Billancourt, est un rappeur français. Il est le fondateur de 92i, collectif regroupant initialement des rappeurs issus des Hauts-de-Seine, tels Mala et Bram's ; il fut également membre du groupe de rap français Lunatic, avec son ancien acolyte Ali, au sein duquel ils se sont fait connaître au milieu des années 1990")
+artiste1 = Artiste.create(name: "JOJI REDBACK", genre:"ARTISTE COMPOSITEUR/RAPPEUR", youtube_link:"https://www.youtube.com/watch?v=Cp9pk-FkE6E&ab_channel=B20baOfficiel", description:"Joseph Grinda aka Jojiredback est un jeune rappeur d’origine française et australienne. C’est à travers ses textes et sa musique qu’il s’exprime et partage sa vision du monde. Ses nombreux voyages de la Chine au Canada lui ont permis de développer un style qui lui est bien propre",les_dessous:"Réécriture de l’entrevue", biography:"Depuis la parution de son premier album Northwave en 2018, Mike Shabb est inarrêtable. Âgé de 22 ans, le rappeur ne s’est jamais assis sur ses lauriers, pas même après que VICE ait affirmé qu’il incarnait « l'avenir du rap québécois », au tout début de sa carrière. Pour Mike Shabb, la musique et le travail ardu restent la priorité - pas question de se laisser distraire par quoi que ce soit ...")
 Artiste.last.photo.attach(io: file1, filename: 'booba.jpg', content_type: 'image/jpg')
 User.last.save!
 artiste2 = Artiste.create(name: "Christophe Maé", genre:"Pop",youtube_link:"https://www.youtube.com/watch?v=Cp9pk-FkE6E&ab_channel=B20baOfficiel", biography:"Passionné de tennis et de ski, il doit abandonner le sport à la suite d'une polyarthrite chronique, qui l'immobilise à l'âge de 16 ans1,2. C'est alors qu'il découvre la musique de Stevie Wonder, qui lui donne envie d'apprendre l'harmonica")

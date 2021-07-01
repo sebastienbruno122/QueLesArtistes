@@ -2,7 +2,6 @@ class NouveautesController < ApplicationController
 
   def index
     @nouveautes = Nouveaute.all
-
   end
 
   def show

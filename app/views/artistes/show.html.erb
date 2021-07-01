@@ -1,15 +1,15 @@
-<h1> show</h1>
 <div class="container">
   <div class="row">
-    <div class="col-6 offset-3">
-      <div>
-        <h2><%= @artiste.name %></h2>
-        <p><%= @artiste.genre %></p>
-        <p><%= @artiste.biography %></p>
-        <p><%= @artiste.description %></p>
-        <p><%= @artiste.les_dessous %></p>
+
+    <div class="col-12 col-lg-8">
+        <h1 class="main-header-show"><%= @artiste.name %></h1>
+        <p class="artiste-genre"><%= @artiste.genre %></p>
+        <p class="artiste-description"><%= @artiste.description %></p>
+    </div>
+
+    <div class="col-12 col-lg-4">
         <% if @artiste.photo.attached? %>
-        <%= cl_image_tag @artiste.photo.key, height: 600, width: 400, crop: :fill %>
+        <%= cl_image_tag @artiste.photo.key, height: 630, width: 350, crop: :fill, :class => 'img-s-artiste' %>
         <% end %>
         <div>
           <a href="<%= @artiste.youtube_link  %>" target="_blank">Youtube video</a>
@@ -17,16 +17,48 @@
         <% if user_signed_in? %>
          <%= link_to "edit", edit_artiste_path , class: 'btn btn-primary'%>
         <% end %>
-          <%= render "nouveautes/citations", nouveautes: @artiste.nouveautes %>
-        </div>
-
-      </div>
     </div>
+
   </div>
 </div>
 
-<div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-12 col-lg-3">
+    <h3>Biography</h3>
+    </div>
+
+    <div class="col-12 col-lg-9">
+        <p><%= @artiste.biography %></p>
+    </div>
+
+  </div>
 </div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-12 col-lg-3">
+      <p><%= @artiste.les_dessous %></p>
+    </div>
+
+    <div class="col-12 col-lg-9">
+        <p><%= @artiste.description %></p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 <div>
   <%= link_to "back to list", artistes_path, class: 'btn btn-light' %>

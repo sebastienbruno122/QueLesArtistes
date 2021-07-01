@@ -2,12 +2,9 @@ body {
   background-color: #FFEAED;
 }
 
-h1 {
-  padding-left: 110px;
-}
-
 .main-header {
   font-size: 64px;
+  padding-left: 110px;
 }
 
 .sub-title {
@@ -66,8 +63,6 @@ h1 {
   border-radius: 10px;
   overflow: hidden;
   z-index: 1;
-  height: 320px;
-  width: 480px;
 }
 
 .line-1 {
@@ -111,4 +106,8 @@ h1 {
   top: 50%;
   transform: translateY(-50%);
   z-index: -1;
+}
+
+#artistes {
+  scroll-behavior: smooth;
 }

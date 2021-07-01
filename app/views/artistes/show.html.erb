@@ -7,6 +7,7 @@
         <p><%= @artiste.genre %></p>
         <p><%= @artiste.biography %></p>
         <p><%= @artiste.description %></p>
+        <p><%= @artiste.les_dessous %></p>
         <% if @artiste.photo.attached? %>
         <%= cl_image_tag @artiste.photo.key, height: 600, width: 400, crop: :fill %>
         <% end %>

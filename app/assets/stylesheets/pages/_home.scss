@@ -111,9 +111,9 @@ body {
 }
 
 .youtube-home {
-  position: relative;
+  position: absolute;
   left: 240px;
-  top: 200px;
+  top: 265px;
   border-radius: 25%;
   border-radius: 10px;
   overflow: hidden;
@@ -208,28 +208,27 @@ body {
 //   }
 // }
 
-// @media(max-width: 992px) {
-// .line-2 {
-//   font-family: "Open Sans";
-//   text-align: center;
-//   position: absolute;
-//   width: fit-content;
-//   margin: 0 auto;
-//   bottom: 73%;
-//   left: 69%;
-//   }
-// }
 
-// @media(max-width: 768px) {
-// .line-2:before {
-//   content: "";
-//   height: 2px;
-//   width: 230px;
-//   background: #9f3346;
-//   position: absolute;
-//   left: 105px;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   z-index: 7;
-//   }
-// }
+.line-2 {
+  font-family: "Open Sans";
+  text-align: center;
+  position: absolute;
+  width: fit-content;
+  margin: 0 auto;
+  bottom: 73%;
+  left: 69%;
+  }
+
+
+
+.line-2:before {
+  content: "";
+  height: 2px;
+  width: 230px;
+  background: #9f3346;
+  position: absolute;
+  left: 105px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 7;
+}

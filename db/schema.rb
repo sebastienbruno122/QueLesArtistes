@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2021_07_01_085454) do
 
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -46,7 +45,6 @@ ActiveRecord::Schema.define(version: 2021_07_01_085454) do
     t.string "youtube_link"
     t.text "description"
     t.text "les_dessous"
-
   end
 
   create_table "nouveautes", force: :cascade do |t|

@@ -9,7 +9,17 @@
 
     <div class="col-12 col-lg-4">
         <% if @artiste.photo.attached? %>
-        <%= cl_image_tag @artiste.photo.key, height: 630, width: 350, crop: :fill, :class => 'img-s-artiste' %>
+        <div>
+          <%= cl_image_tag @artiste.photo.key, crop: :fill, :class => 'img-s-artiste' %>
+        </div>
+          <div class="card-s-youtube">
+            <%= cl_image_tag @artiste.photo.key, crop: :fill %>
+            <div class="card-s-youtube-name">
+              <div>
+                <h2>Title here</h2>
+              </div>
+            </div>
+          </div>
         <% end %>
         <div>
           <a href="<%= @artiste.youtube_link  %>" target="_blank">Youtube video</a>

@@ -1,5 +1,4 @@
 <div class="container">
-<h1><strong>Les artistes</strong></h1>
   <div>
   <% if user_signed_in? %>
   <%= link_to "Add new artiste", new_artiste_path %>
@@ -8,8 +7,8 @@
   <div class="cards-index">
       <% @artistes.each do |artiste| %>
         <%= link_to artiste_path(artiste), class: "text-decoration-none" do %>
-        <div class="card-trip mb-3">
-          <div class="card-info p-2">
+        <div class="card-trip">
+          <div class="card-info">
            <h2> <%= artiste.name %></h2>
            <h4> <%= artiste.genre %></h4>
           </div>

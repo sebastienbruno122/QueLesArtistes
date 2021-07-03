@@ -2,9 +2,7 @@ body {
   background-color: #FFEAED;
 }
 
-.main-header {
-  // font-family: $headers-font;
-  font-size: 64px;
+.main-header-1 {
   position: absolute;
   left: 257px;
   font-family: Montserrat;
@@ -12,7 +10,7 @@ body {
   font-weight: 800;
   font-size: 64px;
   line-height: 78px;
-  width: 420px;
+  width: 556px;
  }
 
 @media(max-width: 992px) {
@@ -78,6 +76,7 @@ body {
 
 .text-welcome {
   position: absolute;
+  top: 185px;
   left: 875px;
   width: 350px;
   }
@@ -113,12 +112,13 @@ body {
 
 .youtube-home {
   position: relative;
-  left: 240px;
-  top: 200px;
+  left: 190px;
+  top: 130px;
   border-radius: 25%;
   border-radius: 10px;
   overflow: hidden;
   z-index: 1;
+  width: 50%;
 }
 
 @media(max-width: 992px) {
@@ -155,33 +155,64 @@ body {
   z-index: 1;
   }
 }
-
-
-.what-we-do-title {
-  padding-left: 70px;
-  // padding-top: 660px;
+.home-2 {
+  position: relative;
+  top: 140px;
+  left: 200px;
 }
 
-.WWD {
-  padding-left: 120px;
-  margin-top: 25px;
-  position: relative;
+.main-header-2 {
+  position: absolute;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 78px;
+  left: 70px;
+}
+
+.wwd-img {
+  position: absolute;
+  top: 180px;
+  left: 75px;
 }
 
 .wwd-text {
-  height: 117px;
-  width: 480px;
-  position: relative;
-  bottom: 235px;
-  left: 550px;
-  z-index: 1;
+  position: absolute;
   font-size: 24px;
+  width: 496px;
+  top: 275px;
+  left: 445px;
 }
 
-.WWD-title {
+.home-3 {
+  position: relative;
+  top: 180px;
+  left: 270px;
+}
+
+.citations {
+  position: absolute;
+  top: 451px;
+  left: 43px;
+}
+
+.home-4 {
+  position: relative;
+  top: 790px;
+  left: 195px;
+}
+
+.main-header-4 {
+  font-weight: 800;
   font-size: 64px;
+  left: 100px;
+  line-height: 78px;
+  position: absolute;
 }
 
+.artistes-home {
+  // position: relative;
+  // top: 500px;
+}
 
 // @media(min-width: 992px) {
 // .line-1 {
@@ -234,3 +265,8 @@ body {
 //   z-index: 7;
 //   }
 // }
+
+.admin-sign {
+  position: absolute;
+  bottom: 0px;
+}

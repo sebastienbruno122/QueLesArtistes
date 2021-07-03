@@ -1,12 +1,46 @@
-<div class="container">
-      <h1 class="main-header">Que l'artiste</h1>
-      <h4 class="sub-title">Les entrevues plaisir</h4>
-    <br>
+
+  <div class="home-1"></div>
+    <h1 class="main-header-1">Que l'artiste</h1>
+    <h4 class="sub-title">Les entrevues plaisir</h4>
     <p class="text-welcome">Bienvenue,<br> tu veux découvrir des talents en plein essor venant de Montréal et plus largement du Québec ? <br> Tu es à la bonne place !</p>
     <div class="youtube-home">
       <iframe width="480" height="360" src="https://www.youtube.com/embed/ozHgsLa3q40" allowfullscreen></iframe>
     </div>
-</div>
+  </div>
+  <div class="home-2">
+    <h2 class="main-header-2">Fait par et pour<br> les artistes</h2>
+    <%= cl_image_tag("j1ymuntctt6klxdkbxox",class:"wwd-img") %>
+    <p class="wwd-text">En tant que média indépendant, Que L’Artiste vous emmène dans l’univers des artistes montréalais. Nous proposons une solution au manque de diffusion pour les créateurs.</p>
+  </div>
+
+
+
+  <div class="home-3">
+    <div class="citations"><%= render "nouveautes/last3citations" %></div>
+  </div>
+
+  <div class="home-4">
+    <h1 class=main-header-4>Les artistes</h1>
+    <%# <div class="artistes-home" id="artistes"><%= render "artistes/artistes_list" %></div> %>
+  </div>
+
+
+<div>
+    <ul class="admin-sign mr-auto ">
+      <% if user_signed_in? %>
+        <li class="nav-item dropdown ">
+          <div>
+            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-light" %>
+          </div>
+          </div>
+        </li>
+        <% else %>
+        <li class="nav-item">
+          <%= link_to "Admin", new_user_session_path, class: "btn btn-light" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 
 
 

@@ -92,6 +92,13 @@ html, body {
       position: relative;
       left: 220px;
   }
+
+    .home-2  {
+      position: relative;
+      top: 190px;
+      left: 200px;
+    }
+
     .main-header {
       display: flex;
       justify-content: center;
@@ -117,7 +124,7 @@ html, body {
   }
   .youtube-home {
       position: relative;
-      right: 90px;
+      right: 195px;
       top: 170px;
       border-radius: 10px;
       overflow: hidden;
@@ -151,6 +158,13 @@ html, body {
       position: relative;
       left: 95px;
   }
+
+    .home-2  {
+      position: relative;
+      top: 190px;
+      left: 200px;
+    }
+
     .main-header {
       display: flex;
       justify-content: center;
@@ -179,10 +193,20 @@ html, body {
       right: 90px;
       top: 140px;
       border-radius: 10px;
-      overflow: hidden;
       z-index: 1;
       width: 100%;
   }
+
+  .youtube-home iframe {
+      position: relative;
+      right: 0px;
+      top: 20px;
+      border-radius: 10px;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+  }
+
   .main-header-2 {
       position: absolute;
       font-weight: 800;
@@ -213,6 +237,13 @@ html, body {
       position: relative;
       left: 95px;
   }
+
+      .home-2  {
+      position: relative;
+      top: 190px;
+      left: 200px;
+  }
+
     .main-header {
       display: flex;
       justify-content: center;
@@ -241,10 +272,23 @@ html, body {
       right: 90px;
       top: 170px;
       border-radius: 10px;
-      overflow: hidden;
+      // overflow: hidden;
       z-index: 1;
       width: 100%;
   }
+
+  .youtube-home iframe {
+      position: relative;
+      left: 0px;
+      top: 30px;
+      border-radius: 10px;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+  }
+
+
+
   .main-header-2 {
       position: absolute;
       font-weight: 800;
@@ -357,4 +401,3 @@ html, body {
   position: absolute;
   bottom: 0px;
 }
-

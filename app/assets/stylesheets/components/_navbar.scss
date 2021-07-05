@@ -27,6 +27,8 @@
 
 .nav-title {
 position: relative;
+font-size: 14px;
+font-weight: 300;
 color: #9f3346;
 &:hover {
 cursor: pointer;
@@ -39,7 +41,7 @@ width: 100%;
 &:before {
 content: "";
 width: 0%;
-height: 2px;
+height: 1px;
 background: #9f3346;
 position: absolute;
 bottom: -4px;

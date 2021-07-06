@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_01_085454) do
+ActiveRecord::Schema.define(version: 2021_07_06_154401) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,10 @@ ActiveRecord::Schema.define(version: 2021_07_01_085454) do
     t.string "youtube_link"
     t.text "description"
     t.text "les_dessous"
+    t.string "youtube_nouveaute1"
+    t.string "youtube_nouveaute2"
+    t.string "youtube_nouveaute3"
+    t.string "youtube_nouveaute4"
   end
 
   create_table "nouveautes", force: :cascade do |t|

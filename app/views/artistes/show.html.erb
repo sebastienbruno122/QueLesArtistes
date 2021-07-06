@@ -69,9 +69,18 @@
     <div class="col-12 col-lg-9">
 
       <div class="cards">
-        <iframe width="333" height="200" src="https://www.youtube.com/embed/ifjAfjkOyso" allowfullscreen></iframe>
-        <iframe width="333" height="200" src="https://www.youtube.com/embed/sw50zdhjLXE" allowfullscreen></iframe>
-        <iframe width="333" height="200" src="https://www.youtube.com/embed/lS7pUb5OSvw" allowfullscreen></iframe>
+      <% unless @artiste.youtube_nouveaute1.empty? %>
+        <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute1%>" allowfullscreen></iframe>
+      <% end %>
+      <% unless @artiste.youtube_nouveaute2.empty? %>
+        <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute2%>" allowfullscreen></iframe>
+      <% end %>
+      <% unless @artiste.youtube_nouveaute3.empty? %>
+        <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute3%>" allowfullscreen></iframe>
+      <% end %>
+      <% unless @artiste.youtube_nouveaute4.empty? %>
+        <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute4%>" allowfullscreen></iframe>
+      <% end %>
       </div>
 
     </div>

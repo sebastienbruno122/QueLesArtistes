@@ -101,11 +101,20 @@
   padding-bottom: 70px;
   }
 
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   #show-container {
     position: relative;
     top:150px;
   }
+
+
+
 }
+
 
 
 

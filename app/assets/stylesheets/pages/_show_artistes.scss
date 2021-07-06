@@ -1,4 +1,25 @@
-/* For desktop: */
+.img-s-artiste{
+  width: 100%;
+}
+
+.bio-s-title, .dessous-s-title{
+  font-size: 24px;
+  font-weight: 800;
+  font-family: Montserrat;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.bio-s, .dessous-s{
+  font-size: 28px;
+  font-weight: 400;
+  font-family: Volkhov;
+  margin-bottom: 25px;
+  //line-height: 36,12px !important;
+}
+
+
+
 @media(min-width:992px) {
     .artiste-genre{
         font-size: 18px;
@@ -17,10 +38,15 @@
         position: absolute;
         top: 270px
     }
+    .main-header-show {
+      font-size: 72px;
+      font-weight: 800;
+      text-align: center;
+    }
 }
 
 /* For mobile tablets: */
-@media(min-width: 778px) {
+@media(min-width: 768px) {
     .artiste-genre{
         font-size: 18px;
         font-weight: 500;
@@ -36,7 +62,11 @@
     .artiste-description{
         padding-top: 25px;
         padding-bottom: 25px;
-
+    }
+    .main-header-show {
+      font-size: 72px;
+      font-weight: 800;
+      text-align: center;
     }
   }
 
@@ -55,13 +85,24 @@
 			padding-top: 25px;
 			padding-bottom: 25px;
 		}
+    .main-header-show {
+      font-size: 72px;
+      font-weight: 800;
+      text-align: center;
+    }
   }
 
+  // Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  .show_artiste{
+    padding-top: 200px;
+  }
+}
 
 
 
 .main-header-show {
-    font-size: 72px;
+    font-size: 60px;
     font-weight: 800;
     text-align: center;
   }

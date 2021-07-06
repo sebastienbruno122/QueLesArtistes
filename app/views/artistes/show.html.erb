@@ -11,19 +11,17 @@
         <% if @artiste.photo.attached? %>
         <div>
           <%= cl_image_tag @artiste.photo.key, crop: :fill, :class => 'img-s-artiste' %>
-        </div>
           <div class="card-s-youtube">
             <%= cl_image_tag @artiste.photo.key, crop: :fill %>
             <div class="card-s-youtube-name">
-              <div>
-                <h2>Title here</h2>
-              </div>
+                <h2>
+                <%= @artiste.name %>
+                <a href="<%= @artiste.youtube_link %>" target="_blank"> <i class="fas fa-play-circle"></i></a>
+                </h2>
             </div>
           </div>
-        <% end %>
-        <div>
-          <a href="<%= @artiste.youtube_link  %>" target="_blank">Youtube video</a>
         </div>
+        <% end %>
         <% if user_signed_in? %>
          <%= link_to "edit", edit_artiste_path , class: 'btn btn-primary'%>
         <% end %>
@@ -33,32 +31,38 @@
 </div>
 
 
-<div class="container">
+<div class="container mt-5">
   <div class="row">
 
     <div class="col-12 col-lg-3">
-    <h3>Biography</h3>
+    <h3 class="bio-s-title">BIOGRAPHY</h3>
     </div>
 
     <div class="col-12 col-lg-9">
-        <p><%= @artiste.biography %></p>
+        <p class="bio-s"><%= @artiste.biography %></p>
     </div>
 
   </div>
 </div>
 
-<div class="container">
+<div class="container mt-5">
   <div class="row">
 
     <div class="col-12 col-lg-3">
-      <p><%= @artiste.les_dessous %></p>
+      <p class="dessous-s-title">LES DESSOUS DE L’ENTREVUE</p>
     </div>
 
     <div class="col-12 col-lg-9">
-        <p><%= @artiste.description %></p>
+        <p class="dessous-s"> <%= @artiste.les_dessous %></p>
     </div>
 
   </div>
+
+<iframe width="480" height="360" src="https://www.youtube.com/embed/ifjAfjkOyso" allowfullscreen></iframe>
+<iframe width="480" height="360" src="https://www.youtube.com/embed/sw50zdhjLXE" allowfullscreen></iframe>
+<iframe width="480" height="360" src="https://www.youtube.com/embed/lS7pUb5OSvw" allowfullscreen></iframe>
+
+
 </div>
 
 

@@ -1,6 +1,11 @@
-<strong>NOUVELLE ENTREVUE</strong>
+<h3 class="horizontal-entrevue">NOUVELLE ENTREVUE</h3>
+<h1 class="artiste-home-name"><%= Artiste.first.name %></h1>
+<h6 class="artiste-home-genre"><%= Artiste.first.genre %></h6>
+<p class="artiste-home-citation"><%= @nouveautes.last(3)[2].citation %></p>
 
-<p><%= @nouveautes.last(3)[2].citation%></p>
-<p><%= @nouveautes.last(3)[1].citation%></p>
-<p><%= @nouveautes.last(3)[0].citation%></p>
 
+
+
+
+<%# <p><%= @nouveautes.last(3)[1].citation%>
+<%# <p><%= @nouveautes.last(3)[0].citation%>

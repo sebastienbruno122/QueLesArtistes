@@ -58,6 +58,7 @@ html, body {
       overflow: hidden;
       z-index: 1;
       width: 100%;
+      overflow: hidden;
   }
   .home-2  {
       position: relative;
@@ -134,7 +135,7 @@ html, body {
 
 .home-3 {
   position: relative;
-  top: 550px;
+  top: 600px;
   left: 58px;
 }
 .line-3 {
@@ -200,7 +201,7 @@ html, body {
   background: #9f3346;
   position: absolute;
   left: 70px;
-  top: 240px;
+  top: 345px;
   transform: rotate(-90deg);
   z-index: 7;
   }
@@ -208,7 +209,7 @@ html, body {
   .horizontal-entrevue {
     transform: rotate(-90deg);
     position: absolute;
-    top: 65px;
+    top: 165px;
     right: 1035px;
     width: 300px;
     font-weight: 900;
@@ -224,7 +225,7 @@ html, body {
 
   .artiste-home-genre {
     position: absolute;
-    left: 300px;
+    left: 348px;
     top: 67px;
   }
 
@@ -232,6 +233,16 @@ html, body {
     position: absolute;
     top: 124px;
     left: 121px;
+  }
+
+  .horizontal-entrevue-subtitle {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 591px;
+    right: 970px;
+    width: 265px;
+    font-weight: 500;
+    font-size: 14px;
   }
 }
 

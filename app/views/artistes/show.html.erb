@@ -34,15 +34,12 @@
 <div id="show-container" class="container show pt-5 mt-5 ">
 
   <div class="biography">
-
     <div class="col-12 col-lg-3">
-    <h3 class="bio-s-title">BIOGRAPHY</h3>
+      <h3 class="bio-s-title">BIOGRAPHY</h3>
     </div>
-
     <div class="col-12 col-lg-9">
-        <p class="bio-s"><%= @artiste.biography %></p>
+      <p class="bio-s"><%= @artiste.biography %></p>
     </div>
-
   </div>
 
 
@@ -67,24 +64,39 @@
     </div>
 
     <div class="col-12 col-lg-9">
-
       <div class="cards">
-      <% unless @artiste.youtube_nouveaute1.empty? %>
-        <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute1%>" allowfullscreen></iframe>
-      <% end %>
-      <% unless @artiste.youtube_nouveaute2.empty? %>
-        <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute2%>" allowfullscreen></iframe>
-      <% end %>
-      <% unless @artiste.youtube_nouveaute3.empty? %>
-        <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute3%>" allowfullscreen></iframe>
-      <% end %>
-      <% unless @artiste.youtube_nouveaute4.empty? %>
-        <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute4%>" allowfullscreen></iframe>
-      <% end %>
+        <% unless @artiste.youtube_nouveaute1.empty? %>
+          <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute1%>" allowfullscreen></iframe>
+        <% end %>
+        <% unless @artiste.youtube_nouveaute2.empty? %>
+          <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute2%>" allowfullscreen></iframe>
+        <% end %>
+        <% unless @artiste.youtube_nouveaute3.empty? %>
+          <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute3%>" allowfullscreen></iframe>
+        <% end %>
+        <% unless @artiste.youtube_nouveaute4.empty? %>
+          <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute4%>" allowfullscreen></iframe>
+        <% end %>
       </div>
-
     </div>
   </div>
+
+    <div class="contact">
+      <div class="col-12 col-lg-3">
+        <p class="dessous-s-title">CONTACT</p>
+      </div>
+
+      <div class="col-12 col-lg-9">
+       <% if @artiste.reseau1.attached? %>
+        <%= cl_image_tag @artiste.reseau1.key, crop: :fill, :class => 'img-s-reseau' %>
+       <% end %>
+       <% if @artiste.reseau2.attached? %>
+        <%= cl_image_tag @artiste.reseau2.key, crop: :fill, :class => 'img-s-reseau' %>
+        <% end %>
+      </div>
+    </div>
+
+</div>
 
 <div>
   <%= link_to "back to list", artistes_path, class: 'btn btn-light' %>

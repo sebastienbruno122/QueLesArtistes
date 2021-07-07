@@ -244,6 +244,48 @@ html, body {
     font-weight: 500;
     font-size: 14px;
   }
+
+  .home-4 {
+    position: relative;
+    top: 750px;
+    left: 195px;
+  }
+
+  .home-5 {
+    position: relative;
+    top: 750px;
+    left: 195px;
+  }
+
+  .main-header-4 {
+    position: relative;
+    top: 800px;
+    justify-content: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 78px;
+    width: 556px;
+  }
+
+  .main-header-5 {
+  position: absolute;
+  top: 1550px;
+  justify-content: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 78px;
+  width: 556px;
+  }
+
+  .carroussel {
+    position: absolute;
+    top: 900px;
+    right: 375px;
+  }
 }
 
 @media(min-width: 992px) and (max-width: 1199.98px) {
@@ -921,12 +963,6 @@ html, body {
   position: relative;
   top: 411px;
   left: 43px;
-}
-
-.home-4 {
-  position: relative;
-  top: 790px;
-  left: 195px;
 }
 
 .main-header-4 {

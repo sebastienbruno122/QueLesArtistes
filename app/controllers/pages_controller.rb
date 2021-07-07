@@ -4,4 +4,11 @@ class PagesController < ApplicationController
     @artistes = Artiste.all
     @nouveautes = Nouveaute.all
   end
+
+      private
+
+def artiste_params
+    params.require(:artiste).permit(:name, :genre, :biography, :photo, :youtube_link, :description, :les_dessous, :youtube_nouveaute1, :youtube_nouveaute2, :youtube_nouveaute3, :youtube_nouveaute4)
+  end
+
 end

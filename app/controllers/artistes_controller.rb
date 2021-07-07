@@ -33,4 +33,10 @@ class ArtistesController < ApplicationController
     @artiste.destroy
     redirect_to artistes_path
   end
+
+  private
+
+  def artiste_params
+    params.require(:artiste).permit(:name, :genre, :biography, :photo, :youtube_link, :description, :les_dessous, :youtube_nouveaute1, :youtube_nouveaute2, :youtube_nouveaute3, :youtube_nouveaute4, :reseau1, :reseau2)
+  end
 end

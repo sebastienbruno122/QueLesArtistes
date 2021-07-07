@@ -34,7 +34,6 @@ class ArtistesController < ApplicationController
     redirect_to artistes_path
   end
 
-
   private
 
   def artiste_params

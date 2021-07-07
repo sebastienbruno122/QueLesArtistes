@@ -20,33 +20,19 @@
       <p class="line-3"></p>
     </div>
   </div>
-
-
-
   <div class="home-3">
     <div class="citations"><%= render "nouveautes/last3citations" %></div>
       <p class="line-4"></p>
       <p class="horizontal-entrevue-subtitle">PLAISIR</p>
   </div>
 
-    <%# <h1>Les artistes</h1> %>
-  <%# <div class="home-4">
-    <div class="artistes-home" id="artistes"><%= render "artistes/artistes_list"%>
-
-  <div>
-    <ul class="admin-sign mr-auto ">
-      <% if user_signed_in? %>
-        <li class="nav-item dropdown ">
-          <div>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-light" %>
-          </div>
-          </div>
-        </li>
-        <% else %>
-        <li class="nav-item">
-          <%= link_to "Admin", new_user_session_path, class: "btn btn-light" %>
-        </li>
-      <% end %>
-    </ul>
+  <div class="home-4">
+    <h1 class="main-header-4" id="artistes">Les artistes</h1>
+    <div class="carroussel"><%= render "artistes/artistes_carroussel" %></div>
   </div>
+    <%# <div class="artistes-home" id="artistes"><%= render "artistes/artistes_list"%>
+
+    <div class="home-5">
+    <h1 class="main-header-5">L’équipe QLA</h1>
+    </div>
 </div>

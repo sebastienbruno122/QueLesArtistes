@@ -88,11 +88,15 @@
 
       <div class="col-12 col-lg-9">
        <% if @artiste.reseau1.attached? %>
-        <%= cl_image_tag @artiste.reseau1.key, crop: :fill, :class => 'img-s-reseau' %>
+        <h3 class="horizontal-show-insta">INSTAGRAM</h3>
+        <%= cl_image_tag("ceyzngimbraboahlorc5",class:"iphone1") %>
+        <%= cl_image_tag @artiste.reseau1.key, crop: :fill, :class => 'img-s-reseau1' %>
        <% end %>
        <% if @artiste.reseau2.attached? %>
-        <%= cl_image_tag @artiste.reseau2.key, crop: :fill, :class => 'img-s-reseau' %>
-        <% end %>
+       <h3 class="horizontal-show-spotify">SPOTIFY</h3>
+        <%= cl_image_tag("ceyzngimbraboahlorc5",class:"iphone2") %>
+        <%= cl_image_tag @artiste.reseau2.key, crop: :fill, :class => 'img-s-reseau2' %>
+      <% end %>
       </div>
     </div>
 

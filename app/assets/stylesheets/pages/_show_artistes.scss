@@ -18,6 +18,23 @@
   //line-height: 36,12px !important;
 }
 
+.img-s-reseau1{
+  width: 237px;
+  height: 420px;
+  position: absolute;
+  left: 27px;
+  top: 104px;
+}
+
+.img-s-reseau2{
+  width: 237px;
+  height: 420px;
+  position: absolute;
+  right: 81px;
+  bottom: 64px;
+}
+
+
 
 /* For mobile tablets: */
 @media(min-width: 768px) {
@@ -95,11 +112,13 @@
     text-align: center;
     }
 
-  .biography, .dessous, .dernieres{
+  .biography, .dessous, .dernieres, .contact{
   display: flex;
   padding-top: 70px ;
   padding-bottom: 70px;
   }
+
+  
 
   .cards{
     display: grid;
@@ -113,12 +132,50 @@
   }
 
 
+  .iphone1 {
+  margin-right: 250px;
+  }
+  
+  .horizontal-show-insta {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 176px;
+    right: 723px;
+    width: 268px;
+    font-weight: 900;
+    font-size: 24px; 
+    font-family: Montserrat;
+    letter-spacing: 20px;
+  }
+  
+  
+  .horizontal-show-spotify {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 176px;
+    right: 200px;
+    width: 268px;
+    font-weight: 900;
+    font-size: 24px; 
+    font-family: Montserrat;
+    letter-spacing: 20px;
+  }
 
-}
-
-.img-s-reseau{
-  width: 237px;
-  height: 420px;
+  .img-s-reseau1{
+    width: 237px;
+    height: 420px;
+    position: absolute;
+    left: 28px;
+    top: 64px;
+  }
+  
+  .img-s-reseau2{
+    width: 237px;
+    height: 420px;
+    position: absolute;
+    right: 52px;
+    top: 64px;
+  }
 }
 
 
@@ -135,3 +192,4 @@
  font-weight: 400;
  font-size: 24px;
 }
+

@@ -270,21 +270,30 @@ html, body {
   }
 
   .main-header-5 {
-  position: absolute;
-  top: 1550px;
-  justify-content: center;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 78px;
-  width: 556px;
+    position: absolute;
+    bottom: -40px;
+    justify-content: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 78px;
+    width: 556px;
+    left: 0px;
   }
 
   .carroussel {
     position: absolute;
     top: 900px;
     right: 375px;
+  }
+
+  .cards-artists {
+    position: relative;
+    top: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
   }
 }
 
@@ -965,46 +974,18 @@ html, body {
   left: 43px;
 }
 
-.main-header-4 {
-  font-weight: 800;
-  font-size: 64px;
-  left: 100px;
-  line-height: 78px;
-  position: absolute;
-}
+// .main-header-4 {
+//   font-weight: 800;
+//   font-size: 64px;
+//   left: 100px;
+//   line-height: 78px;
+//   position: absolute;
+// }
 
 .home-5 {
   position: relative;
+  top: 1550px;
 }
-
-
-
-
-// @media(max-width: 992px) {
-// .line-2 {
-//   font-family: "Open Sans";
-//   text-align: center;
-//   position: absolute;
-//   width: fit-content;
-//   margin: 0 auto;
-//   bottom: 73%;
-//   left: 69%;
-//   }
-// }
-
-// @media(max-width: 768px) {
-// .line-2:before {
-//   content: "";
-//   height: 2px;
-//   width: 230px;
-//   background: #9f3346;
-//   position: absolute;
-//   left: 105px;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   z-index: 7;
-//   }
-// }
 
 .admin-sign {
   position: absolute;

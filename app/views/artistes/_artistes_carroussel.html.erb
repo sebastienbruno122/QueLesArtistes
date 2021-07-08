@@ -8,23 +8,16 @@
   <input type="radio" name="position" />
   <input type="radio" name="position" />
 
- 
-  <% @artistes.each do |artiste| %>
-        <%= link_to artiste_path(artiste), class: "text-decoration-none" do %>
-        <div class="item">
-            <% if artiste.photo.attached? %>
-            <%= cl_image_tag artiste.photo.key, height: 300, width: 300, crop: :fill %>
-            <% end %>
-        </div>
-        <% end %>
-  <% end %>
 
 
     <div class="item"></div>
     <div class="item"></div>
     <div class="item"></div>
     <div class="item"></div>
+
+
+
+
 
 </div>
-
 

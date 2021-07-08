@@ -1,10 +1,9 @@
 <h3 class="horizontal-entrevue">NOUVELLE ENTREVUE</h3>
-<% if @nouveautes.count(3)%>
+<%# <% if @nouveautes.count(3)%>
   <h1 class="artiste-home-name"><%= @artistes.last.name %></h1>
   <h6 class="artiste-home-genre"><%= @artistes.last.genre %></h6>
   <p class="artiste-home-citation"><%= @nouveautes.last(3)[2].citation %></p>
-<% end %>
-
+<%# <% end %>
 
 
 <%# <p><%= @nouveautes.last(3)[1].citation%>

@@ -9,7 +9,9 @@
     <p class="line-1"></p>
     <p class="line-2"></p>
   </div>
+</div>
 
+<div class="container">
   <div class="home-2">
     <h2 class="main-header-2">Fait par et pour<br> les artistes</h2>
     <%= cl_image_tag("j1ymuntctt6klxdkbxox",class:"wwd-img") %>
@@ -20,19 +22,34 @@
       <p class="line-3"></p>
     </div>
   </div>
+</div>
+
+<div class="container">
   <div class="home-3">
     <div class="citations"><%= render "nouveautes/last3citations" %></div>
       <p class="line-4"></p>
       <p class="horizontal-entrevue-subtitle">PLAISIR</p>
   </div>
+</div>
 
+<div class="container">
   <div class="home-4">
-    <h1 class="main-header-4" id="artistes">Les artistes</h1>
+    <h1 class="main-header-4" id="artistes"></h1>
     <div class="carroussel"><%= render "artistes/artistes_carroussel" %></div>
   </div>
     <%# <div class="artistes-home" id="artistes"><%= render "artistes/artistes_list"%>
+</div>
 
-    <div class="home-5">
-    <h1 class="main-header-5">L’équipe QLA</h1>
+<div class="container">
+  <div class="home-5">
+    <div class="col-12 col-lg-9">
+      <h1 class="main-header-5">L’équipe QLA</h1>
+      <div class="cards-artists">
+        <%= image_tag "Thomas.png"; %>
+        <%= image_tag "Gizzo.png"; %>
+        <%= image_tag "Etienne.png"; %>
+        <%= image_tag "Mathieu.png"; %>
+      </div>
     </div>
+  </div>
 </div>

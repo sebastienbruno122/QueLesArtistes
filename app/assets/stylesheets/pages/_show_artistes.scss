@@ -1,61 +1,81 @@
 @media (max-width: 768px){
 
-.main-header-show {
-    font-size: 60px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 70px;
+  .main-header-show {
+      font-size: 60px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+  .artiste-description{
+  font-family: 'Volkhov', serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
   }
 
-.artiste-description{
- font-family: 'Volkhov', serif;
- font-weight: 400;
- font-size: 24px;
- text-align: center;
-}
+  .artiste-genre{
+    text-align: center;
+    margin-bottom: 40px;
+  }
 
-.artiste-genre{
-  text-align: center;
-  margin-bottom: 40px;
-}
+  .img-s-artiste{
+    width: 100%;
+  }
 
-.img-s-artiste{
-  width: 100%;
-}
+  .bio-s-title, .dessous-s-title{
+    font-size: 24px;
+    font-weight: 800;
+    font-family: Montserrat;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
 
-.bio-s-title, .dessous-s-title{
-  font-size: 24px;
-  font-weight: 800;
-  font-family: Montserrat;
-  margin-top: 60px;
-  margin-bottom: 25px;
-  text-align: center;
-}
+  .bio-s, .dessous-s{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: Volkhov;
+    margin-bottom: 25px;
+    text-align: center;
+    //line-height: 36,12px !important;
+  }
 
-.bio-s, .dessous-s{
-  font-size: 28px;
-  font-weight: 400;
-  font-family: Volkhov;
-  margin-bottom: 25px;
-  text-align: center;
-  //line-height: 36,12px !important;
-}
+  .img-s-reseau2{
+    width: 237px;
+    height: 420px;
+    position: absolute;
+    left: 28px;
+    top: 756px;
+  }
 
-.img-s-reseau2{
-  width: 237px;
-  height: 420px;
-  position: absolute;
-  left: 28px;
-  top: 693px;
-}
+  .img-s-reseau1 {
+    width: 237px;
+    height: 420px;
+    position: absolute;
+    left: 27px;
+    top: 116px;
+  }
+  
+  .cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
 
-.img-s-reseau1 {
-  width: 237px;
-  height: 420px;
-  position: absolute;
-  left: 27px;
-  top: 104px;
-}
+  h3.horizontal-show-insta, .horizontal-show-spotify {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .iphones{
+      margin: 0 auto;
+      width: 80%;
+  }
+  
+  
 }
 
 
@@ -97,6 +117,19 @@
     left: 27px;
     top: 691px;
   }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  #show-container {
+    margin: 0 auto;
+    width: 50%;
+  }
+
 
   }
 

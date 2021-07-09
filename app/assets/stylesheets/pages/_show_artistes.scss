@@ -1,3 +1,24 @@
+@media (max-width: 768px){
+
+.main-header-show {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+.artiste-description{
+ font-family: 'Volkhov', serif;
+ font-weight: 400;
+ font-size: 24px;
+ text-align: center;
+}
+
+.artiste-genre{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .img-s-artiste{
   width: 100%;
 }
@@ -6,8 +27,9 @@
   font-size: 24px;
   font-weight: 800;
   font-family: Montserrat;
-  margin-top: 10px;
+  margin-top: 60px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .bio-s, .dessous-s{
@@ -15,25 +37,26 @@
   font-weight: 400;
   font-family: Volkhov;
   margin-bottom: 25px;
+  text-align: center;
   //line-height: 36,12px !important;
-}
-
-.img-s-reseau1{
-  width: 237px;
-  height: 420px;
-  position: absolute;
-  left: 27px;
-  top: 104px;
 }
 
 .img-s-reseau2{
   width: 237px;
   height: 420px;
   position: absolute;
-  right: 81px;
-  bottom: 64px;
+  left: 28px;
+  top: 693px;
 }
 
+.img-s-reseau1 {
+  width: 237px;
+  height: 420px;
+  position: absolute;
+  left: 27px;
+  top: 104px;
+}
+}
 
 
 /* For mobile tablets: */
@@ -59,28 +82,22 @@
       font-weight: 800;
       text-align: center;
     }
+    .img-s-reseau1 {
+    width: 237px;
+    height: 420px;
+    position: absolute;
+    left: 27px;
+    top: 104px;
   }
 
-/* For mobile phones: */
-@media(min-width: 576px) {
-    .artiste-genre{
-        font-size: 18px;
-        font-weight: 500;
-        text-align: center;
-    }
-    .img-s-artiste{
-        margin-top: 85px;
-				border-radius: 10px;
-    }
-		.artiste-description{
-			padding-top: 25px;
-			padding-bottom: 25px;
-		}
-    .main-header-show {
-      font-size: 72px;
-      font-weight: 800;
-      text-align: center;
-    }
+  .img-s-reseau2 {
+    width: 237px;
+    height: 420px;
+    position: absolute;
+    left: 27px;
+    top: 691px;
+  }
+
   }
 
   // Extra large devices (large desktops, 1200px and up)
@@ -111,6 +128,15 @@
     font-weight: 800;
     text-align: center;
     }
+
+   
+.bio-s-title, .dessous-s-title{
+  font-size: 24px;
+  font-weight: 800;
+  font-family: Montserrat;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
 
   .biography, .dessous, .dernieres, .contact{
   display: flex;
@@ -153,7 +179,7 @@
   .horizontal-show-spotify {
     transform: rotate(-90deg);
     position: absolute;
-    top: 176px;
+    top: 90px;
     right: 200px;
     width: 268px;
     font-weight: 900;
@@ -174,7 +200,7 @@
     width: 237px;
     height: 420px;
     position: absolute;
-    right: 52px;
+    left: 544px;
     top: 64px;
   }
 
@@ -186,9 +212,7 @@
     position: absolute;
     width: fit-content;
     margin: 0 auto;
-    bottom: 75%;
-    left: 377px;
-    bottom: 108px;
+    right: 203px;
   }
   
   .line-1-show:before {
@@ -210,7 +234,6 @@
     width: fit-content;
     margin: 0 auto;
     left: 367px;
-    bottom: 108px;
   }
 
   .line-2-show:before {
@@ -231,8 +254,8 @@
     position: absolute;
     width: fit-content;
     margin: 0 auto;
-    left: 467px;
-    bottom: 96px;
+    right: 198px;
+    top: 143px;
   }
   .line-3-show, .line-4-show, .line-5-show, .line-6-show {
     font-family: "Open Sans";
@@ -241,10 +264,21 @@
     width: fit-content;
     margin: 0 auto;
     bottom: 75%;
-    left: 80%;
+    left: 78%;
     top: 124px;
   }
+
+  .line-6-show {
   
+    font-family: "Open Sans";
+    text-align: center;
+    position: absolute;
+    width: fit-content;
+    margin: 0 auto;
+    bottom: 75%;
+    left: 66%;
+    top: 110px;
+  }
   
   .line-3-show:before, .line-4-show:before, .line-5-show:before, .line-6-show:before {
     content: "";
@@ -258,7 +292,7 @@
     z-index: 7;
     }
 
-    .line-3-show-bis, .line-4-show-bis, .line-5-show-bis, .line-6-show-bis {
+    .line-3-show-bis, .line-4-show-bis, .line-5-show-bis {
       font-family: "Open Sans";
       text-align: center;
       position: absolute;
@@ -269,6 +303,17 @@
       top: 75px;
     }
     
+
+    .line-6-show-bis {
+      font-family: "Open Sans";
+      text-align: center;
+      position: absolute;
+      width: fit-content;
+      margin: 0 auto;
+      bottom: 75%;
+      left: 86%;
+      top: 12px;
+    }
     
     .line-3-show-bis:before, .line-4-show-bis:before, .line-5-show-bis:before, .line-6-show-bis:before{
       content: "";
@@ -286,16 +331,4 @@
 
 
 
-.main-header-show {
-    font-size: 60px;
-    font-weight: 800;
-    text-align: center;
-  }
-
-
-  .artiste-description{
- font-family: 'Volkhov', serif;
- font-weight: 400;
- font-size: 24px;
-}
 

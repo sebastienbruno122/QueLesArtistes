@@ -1,9 +1,50 @@
-<h3 class="horizontal-entrevue">NOUVELLE ENTREVUE</h3>
-<%# <% if @nouveautes.count(3)%>
-  <h1 class="artiste-home-name"><%= @artistes.last.name %></h1>
-  <h6 class="artiste-home-genre"><%= @artistes.last.genre %></h6>
-  <p class="artiste-home-citation"><%= @nouveautes.last(3)[2].citation %></p>
-<%# <% end %>
+
+  <%# <div class="col-12 col-lg-3"> %>
+<div class="interview">
+  <div class="row pt-5">
+    <div class="col-12 col-lg-3">
+    </div>
+    <div class="col-12 col-lg-9">
+      <div class="cards-index-home">
+            <% @artistes.each do |artiste| %>
+              <div class="card-trip">
+                <% if artiste == @artistes.last %>
+                <div class="row">
+                  <h2 class="main-header-3"> <%= @artistes.last.name %></h2>
+                </div>
+                <div class="row">
+                  <h4 class="sub-title-3"> <%= @artistes.last.genre %></h4>
+                </div>
+                <div class="row">
+                  <p class="artiste-home-citation"><%= @nouveautes.last(3)[2].citation %></p>
+                </div>
+                <div class="row">
+                  <% if artiste.photo.attached? %>
+                    <%= link_to artiste_path(artiste), class: "text-decoration-none" do %>
+                    <%= cl_image_tag artiste.photo.key, class: "img-artist", width: 300, crop: :fill %>
+                  <% end %>
+                </div>
+                <% end %>
+                <% if user_signed_in? %>
+                  <%= link_to "delete", artiste_path(artiste), method: :delete %>
+                  <% end %>
+                  <% end %>
+              </div>
+            <% end %>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 <%# <p><%= @nouveautes.last(3)[1].citation%>

@@ -11,7 +11,7 @@ html, body {
 @media (min-width: 1200px) {
    .main-header-1 {
     position: absolute;
-    left: 180px;
+    left: 110px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
@@ -22,7 +22,7 @@ html, body {
 
   .sub-title {
     position: absolute;
-    left: 370px;
+    left: 310px;
     font-size: 22px;
     top: 86px;
     font-weight: 400;
@@ -31,7 +31,7 @@ html, body {
   .text-welcome {
     height: 137px;
     width: 280px;
-    right: 12px;
+    right: 100px;
     top: 65px;
     position: absolute;
     font-family: Montserrat;
@@ -48,7 +48,7 @@ html, body {
     display: flex;
     padding-top: 226px;
     position: relative;
-    left: 190px;
+    left: 110px;
   }
 
   .main-header-2 {
@@ -125,7 +125,7 @@ html, body {
     width: 276px;
     background: #9f3346;
     position: absolute;
-    right: 242px;
+    right: 324px;
     top: 88px;
     transform: translateY(-50%);
     z-index: 7;
@@ -149,7 +149,7 @@ html, body {
     width: 220px;
     background: #9f3346;
     position: absolute;
-    right: 362px;
+    right: 445px;
     top: 77px;
     transform: translateY(-50%);
     z-index: 7;
@@ -176,7 +176,7 @@ html, body {
     width: 130px;
     background: #9f3346;
     position: absolute;
-    left: -55px;
+    left: -22px;
     top: 50%;
     transform: rotate(-90deg);
     z-index: 7;
@@ -185,8 +185,8 @@ html, body {
   .horizontal-header {
     transform: rotate(-90deg);
     position: absolute;
-    top: 200px;
-    right: 180px;
+    top: 197px;
+    right: 150px;
     width: 268px;
     font-weight: 900;
     font-size: 24px;
@@ -196,7 +196,7 @@ html, body {
     transform: rotate(-90deg);
     position: absolute;
     top: 194px;
-    right: 140px;
+    right: 110px;
     width: 268px;
     font-weight: 500;
     font-size: 14px;
@@ -215,22 +215,22 @@ html, body {
 
 
 .line-4:before {
-  content: "";
-  height: 2px;
-  width: 130px;
-  background: #9f3346;
-  position: absolute;
-  left: 84px;
-  top: -66px;
-  transform: rotate(-90deg);
-  z-index: 7;
+    content: "";
+    height: 2px;
+    width: 130px;
+    background: #9f3346;
+    position: absolute;
+    left: 115px;
+    top: -35px;
+    transform: rotate(-90deg);
+    z-index: 7;
   }
 
   .horizontal-entrevue {
     transform: rotate(-90deg);
     position: absolute;
-    top: 165px;
-    right: 27px;
+    top: 195px;
+    right: -5px;
     width: 300px;
     font-weight: 900;
     font-size: 24px;
@@ -306,8 +306,8 @@ html, body {
   .horizontal-entrevue-subtitle {
     transform: rotate(-90deg);
     position: absolute;
-    bottom: 337px;
-    right: 4px;
+    bottom: 305px;
+    right: -37px;
     width: 265px;
     font-weight: 500;
     font-size: 14px;

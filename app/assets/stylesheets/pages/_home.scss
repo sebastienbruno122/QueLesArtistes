@@ -30,10 +30,17 @@ html, body {
   }
   .text-welcome {
     height: 137px;
-    width: 350px;
-    right: -26px;
-    top: 85px;
+    width: 280px;
+    right: 12px;
+    top: 65px;
     position: absolute;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
 
   }
   .youtube-home {
@@ -115,10 +122,10 @@ html, body {
 .line-1:before {
     content: "";
     height: 2px;
-    width: 340px;
+    width: 276px;
     background: #9f3346;
     position: absolute;
-    right: 205px;
+    right: 242px;
     top: 88px;
     transform: translateY(-50%);
     z-index: 7;
@@ -142,8 +149,8 @@ html, body {
     width: 220px;
     background: #9f3346;
     position: absolute;
-    right: 325px;
-    top: 85px;
+    right: 362px;
+    top: 77px;
     transform: translateY(-50%);
     z-index: 7;
   }
@@ -169,7 +176,7 @@ html, body {
     width: 130px;
     background: #9f3346;
     position: absolute;
-    left: -70px;
+    left: -55px;
     top: 50%;
     transform: rotate(-90deg);
     z-index: 7;
@@ -179,7 +186,7 @@ html, body {
     transform: rotate(-90deg);
     position: absolute;
     top: 200px;
-    right: 1145px;
+    right: 180px;
     width: 268px;
     font-weight: 900;
     font-size: 24px;
@@ -188,8 +195,8 @@ html, body {
   .horizontal-subtitle {
     transform: rotate(-90deg);
     position: absolute;
-    top: 196px;
-    right: 1104px;
+    top: 194px;
+    right: 140px;
     width: 268px;
     font-weight: 500;
     font-size: 14px;
@@ -213,8 +220,8 @@ html, body {
   width: 130px;
   background: #9f3346;
   position: absolute;
-  left: 70px;
-  top: 345px;
+  left: 84px;
+  top: -66px;
   transform: rotate(-90deg);
   z-index: 7;
   }
@@ -223,7 +230,7 @@ html, body {
     transform: rotate(-90deg);
     position: absolute;
     top: 165px;
-    right: 1035px;
+    right: 27px;
     width: 300px;
     font-weight: 900;
     font-size: 24px;
@@ -232,8 +239,8 @@ html, body {
   .img-artist {
     position: relative;
     top: 80px;
-    width: 400px;
-    height: 400px;
+    height: 441px;
+    width: 807px;
   }
 
   #home-container {
@@ -272,19 +279,35 @@ html, body {
     position: absolute;
     left: 160px;
     top: 67px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+
   }
 
   .artiste-home-citation {
     position: absolute;
     top: 124px;
+    font-family: Volkhov;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
     // left: 121px;
   }
 
   .horizontal-entrevue-subtitle {
     transform: rotate(-90deg);
     position: absolute;
-    top: 591px;
-    right: 970px;
+    bottom: 337px;
+    right: 4px;
     width: 265px;
     font-weight: 500;
     font-size: 14px;
@@ -626,7 +649,7 @@ html, body {
   width: 130px;
   background: #9f3346;
   position: absolute;
-  left: -70px;
+  left: -55px;
   top: 50%;
   transform: rotate(-90deg);
   z-index: 7;

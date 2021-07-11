@@ -1,17 +1,19 @@
+ /* For mobile */
+
 @media (max-width: 768px){
 
   .main-header-show {
-      font-size: 60px;
-      font-weight: 800;
-      text-align: center;
-      margin-bottom: 70px;
-    }
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 70px;
+  }
 
   .artiste-description{
-   font-family: 'Volkhov', serif;
-   font-weight: 400;
-   font-size: 24px;
-   text-align: center;
+    font-family: 'Volkhov', serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
   }
   
   .artiste-genre{
@@ -62,9 +64,9 @@
   
   
   /* For mobile tablets: */
-  @media(min-width: 768px) {
-      .artiste-genre{
-          font-size: 18px;
+@media(min-width: 768px) {
+  .artiste-genre{
+    font-size: 18px;
           font-weight: 500;
           text-align: right;
           padding-right: 60px;

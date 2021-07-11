@@ -6,6 +6,30 @@ class ArtistesController < ApplicationController
 
   def show
     @artiste = Artiste.find(params[:id])
+    @video1 = Conred::Video.new(
+      video_url: @artiste.youtube_nouveaute1,
+      width: 285,
+      height: 185,
+      error_message: "Video url is invalid"
+    )
+    @video2 = Conred::Video.new(
+      video_url: @artiste.youtube_nouveaute2,
+      width: 285,
+      height: 185,
+      error_message: "Video url is invalid"
+    )
+    @video3 = Conred::Video.new(
+      video_url: @artiste.youtube_nouveaute3,
+      width: 285,
+      height: 185,
+      error_message: "Video url is invalid"
+    )
+    @video4 = Conred::Video.new(
+      video_url: @artiste.youtube_nouveaute4,
+      width: 285,
+      height: 185,
+      error_message: "Video url is invalid"
+    )
   end
 
   def new

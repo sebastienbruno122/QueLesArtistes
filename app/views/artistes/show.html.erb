@@ -72,20 +72,7 @@
     </div>
 
     <div class="col-12 col-lg-9">
-      <div class="cards">
-        <% unless @artiste.youtube_nouveaute1.empty? %>
-          <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute1%>" allowfullscreen></iframe>
-        <% end %>
-        <% unless @artiste.youtube_nouveaute2.empty? %>
-          <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute2%>" allowfullscreen></iframe>
-        <% end %>
-        <% unless @artiste.youtube_nouveaute3.empty? %>
-          <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute3%>" allowfullscreen></iframe>
-        <% end %>
-        <% unless @artiste.youtube_nouveaute4.empty? %>
-          <iframe width="333" height="200" src="<%= @artiste.youtube_nouveaute4%>" allowfullscreen></iframe>
-        <% end %>
-      </div>
+      <%= render partial: 'artistes/youtube', locals: {artiste: @partiste, youtube_nouveaute1: @youtube_nouveaute1, user: @user} %>
     </div>
   </div>
 

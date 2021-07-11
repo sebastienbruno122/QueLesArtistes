@@ -1,0 +1,14 @@
+      <div class="cards">
+        <% unless @artiste.youtube_nouveaute1.empty? %>
+          <%= @video1.code.html_safe %>
+        <% end %>
+        <% unless @artiste.youtube_nouveaute2.empty? %>
+          <%= @video2.code.html_safe %>
+        <% end %>
+        <% unless @artiste.youtube_nouveaute3.empty? %>
+          <%= @video3.code.html_safe %>
+        <% end %>
+        <% unless @artiste.youtube_nouveaute4.empty? %>
+          <%= @video4.code.html_safe %>
+        <% end %>
+      </div>

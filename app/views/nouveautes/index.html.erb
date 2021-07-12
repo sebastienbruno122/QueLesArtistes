@@ -3,14 +3,15 @@
   <h1>Les dernières nouveautés</h1>
 
   <% @nouveautes.each do |nouveaute| %>
-  <div> <%=  nouveaute.citation%> </div>
+    <div> <%=  nouveaute.citation%> </div>
+      <%= cl_image_tag nouveaute.artiste.photo.key, crop: :fill, :class => 'img-s-artiste' %>
+    </div>
   <% end  %>
-<div>
    <%# <%= render "nouveautes/last3citations", nouveautes: @nouveautes, artistes: @artistes %> %>
-</div>
        <%# <p><%= nouveaute.citation %>
 </div>
 
       <%# <%= link_to "aller voir", artiste_nouveautes_path(nouveaute), class: 'btn btn-primary' %>
+      
 
 

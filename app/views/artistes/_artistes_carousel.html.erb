@@ -13,11 +13,17 @@
       <input type="radio" name="position" />
       <input type="radio" name="position" />
       <main id="carousel">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+      <% @artistes.each do |artiste| %>
+        <div class="item">
+          <div class="artiste_home">
+        <% if artiste.photo.attached? %>
+            <%= cl_image_tag artiste.photo.key, height: 300, width: 300, crop: :fill %>
+        <% end %>
+          </div>
+        <h2> <%= artiste.name %></h2>
+        <h4> <%= artiste.genre %></h4>
+        </div>
+      <% end %>
         <main>
     </div>
 

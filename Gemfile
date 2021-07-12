@@ -27,7 +27,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'simple_form'
 # Reduces boot times through caching; required in config/boot.rb
 # gem 'bootsnap', '>= 1.4.2', require: false
-gem 'simple_form'
 gem 'font-awesome-sass'
 gem 'devise'
 gem 'pundit'
@@ -35,7 +34,6 @@ gem 'cloudinary', '~> 1.16.0'
 gem 'bootstrap', '~> 5.0.1'
 gem 'mail_form'
 gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
-gem 'dotenv-rails', groups: [:development, :test]
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

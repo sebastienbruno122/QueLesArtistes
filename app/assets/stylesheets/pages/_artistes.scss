@@ -9,18 +9,61 @@
 // No media query since this is the default in Bootstrap
 
 
+
+
+
+.d-block {
+    margin: auto;
+}
+
+.carousel-indicators > li {
+ border-radius: 50%;
+ width: 8px;
+ height: 8px;
+ position: relative;
+ top: 40px;
+ background-color: white;
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
 
  }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-
- }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
+   .d-block {
+       margin: auto;
+   }
+
+   .carousel-control-next, .carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-indicators > li {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    position: relative;
+    top: 40px;
+  }
+
+  .citations_index{
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .artiste_index{
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 64px;
+  }
+  .a_index{
+  }
 
  }
  

@@ -1,42 +1,47 @@
-<div class="row form-block">
-  <h1 class="main-header-6" id="contact">Discutons !</h1>
-  <div class="col-12 col-lg-3">
-    <h3 class="horizontal-header-contact">CONTACT</h3>
-    <p class="horizontal-subtitle-contact">ENVOIE DE L’AMOUR</p>
-    <p class="line-contact"></p>
+<div class="form-block">
+    <h1 class="main-header-6" id="contact">Discutons !</h1>
+  <div class="row">
+    <div class="col-12 col-lg-3">
+      <h3 class="horizontal-header-contact">CONTACT</h3>
+      <p class="horizontal-subtitle-contact">ENVOIE DE L’AMOUR</p>
+      <p class="line-contact"></p>
+    </div>
   </div>
-  <div class="col-12 col-lg-9">
-    <%= form_for :contact , :html => {:class => "form-horizontal", :role => "form"}, url: contacts_path, remote: true do |f|%>
-        <div class="col-md-6 position-form">
-            <%= f.label :name %>
 
-            </br>
+  <div class="row">
+    <div class="col-12 col-lg-9">
+      <%= form_for :contact , :html => {:class => "form-horizontal", :role => "form"}, url: contacts_path, remote: true do |f|%>
+          <div class="col-md-6 position-form">
+              <%= f.label :name %>
 
-              <%= f.text_field  :name, required: true, class: "contact-form-text-area", placeholder: "TON NOM OU PSEUDONYME" %></br>
+              </br>
 
-            <%= f.label :email %>
+                <%= f.text_field  :name, required: true, class: "contact-form-text-area", placeholder: "TON NOM OU PSEUDONYME" %></br>
 
-            </br>
+              <%= f.label :email %>
 
-            <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: "TON EMAIL" %></br>
+              </br>
 
-          <%= f.label :message %>
+              <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: "TON EMAIL" %></br>
 
-            </br>
+            <%= f.label :message %>
 
-          <%= f.text_area :message, as: :text, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-                            placeholder: "DIS NOUS EN PLUS!"%></br>
+              </br>
 
-          <div class= "hidden">
-            <%= f.label :nickname %>
-            <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+            <%= f.text_area :message, as: :text, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
+                              placeholder: "DIS NOUS EN PLUS!"%></br>
+
+            <div class= "hidden">
+              <%= f.label :nickname %>
+              <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+            </div>
+
+            <%= f.submit 'Envoyer', class: 'btn btn-light' %>
           </div>
-
-          <%= f.submit 'Envoyer', class: 'btn btn-light' %>
+        <% end %>
+        <div class="col-md-6" id="flash-message">
+          <%= render 'home/flash' %>
         </div>
-      <% end %>
-      <div class="col-md-6" id="flash-message">
-        <%= render 'home/flash' %>
-      </div>
+    </div>
   </div>
 </div>

@@ -1,14 +1,13 @@
-<h1>hello</h1>
 <div class="row form-block">
   <h1 class="main-header-6" id="contact">Discutons !</h1>
   <div class="col-12 col-lg-3">
     <h3 class="horizontal-header-contact">CONTACT</h3>
     <p class="horizontal-subtitle-contact">ENVOIE DE L’AMOUR</p>
     <p class="line-contact"></p>
-  </div> %>
+  </div>
   <div class="col-12 col-lg-9">
-    <%= form_for @contact do |f|%>
-        <div class="col-md-6">
+    <%= form_for :contact , :html => {:class => "form-horizontal", :role => "form"}, url: contacts_path, remote: true do |f|%>
+        <div class="col-md-6 position-form">
             <%= f.label :name %>
 
             </br>

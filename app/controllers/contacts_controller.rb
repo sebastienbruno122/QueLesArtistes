@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
   def new
     @contact = Contact.new
+    # redirect_to contacts_path
   end
 
   def create
@@ -8,6 +9,7 @@ class ContactsController < ApplicationController
     @contact.request = request
     if @contact.deliver
       flash.now[:error] = nil
+      flash.now = 'Merci'
     else
       flash.now[:error] = 'Message ne peut pas être envoyé.'
       render :new

@@ -1,9 +1,9 @@
 html, body {
   background-color: #FFEAED;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   margin: 0px;
-  padding: 0px;
+  padding-bottom: 50px;
   overflow-x: hidden;
 }
 
@@ -321,8 +321,9 @@ html, body {
 
   .home-5 {
     position: relative;
-    // top: 750px;
-    left: 195px;
+    top: 400px;
+    display: flex;
+    justify-content: center;
   }
 
   .main-header-4 {
@@ -339,15 +340,14 @@ html, body {
 
   .main-header-5 {
     position: absolute;
-    bottom: -40px;
-    justify-content: center;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
     font-size: 64px;
     line-height: 78px;
-    width: 556px;
-    left: 0px;
+    top: -52px;
+    width: 436px;
+    left: 58px;
   }
 
   .carroussel {
@@ -356,9 +356,17 @@ html, body {
     right: 375px;
   }
 
+  .group-lines {
+      position: relative;
+      top: 980px;
+      left: 446px;
+
+  }
+
   .cards-artists {
     position: relative;
-    top: 700px;
+    top: 130px;
+    left: 130px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
@@ -371,19 +379,9 @@ html, body {
     top: 2500px;
   }
 
-    .main-header-6 {
-    position: absolute;
-    bottom: 600PX;
-    right: 27px;
-    justify-content: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 78px;
-    width: 556px;
-    left: 190px;
-  }
+.fab:before {
+  color: black;
+}
 
     .horizontal-header-team {
       transform: rotate(-90deg);

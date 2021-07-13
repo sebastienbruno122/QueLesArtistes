@@ -9,6 +9,43 @@ html, body {
 
 
 @media (min-width: 1200px) {
+
+  .animation-1 {
+  //   width: 100px;
+  // height: 100px;
+  // background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  // animation-delay: 2s;
+  // animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+  .animation-2 {
+  //   width: 100px;
+  // height: 100px;
+  // background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+  // animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes example {
+  // from {height: 0;}
+  // to {height: 300px;}
+  0%   { left:0px; top:0px;}
+  // 25%  {left:200px; top:0px;}
+  // 50%  {left:200px; top:200px;}
+  100%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
    .main-header-1 {
     position: absolute;
     left: 110px;
@@ -306,7 +343,7 @@ html, body {
   .horizontal-entrevue-subtitle {
     transform: rotate(-90deg);
     position: absolute;
-    bottom: 305px;
+    top: 205px;
     right: -37px;
     width: 265px;
     font-weight: 500;

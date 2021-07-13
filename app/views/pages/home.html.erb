@@ -22,13 +22,13 @@
 
 <div id="show-container" class="container mt-5 ">
   <div class="row pt-5">
-    <div class="col-12 col-lg-3">
-      <h3 class="horizontal-header">CE QUE L'ON FAIT</h3>
+    <div class="col-12 col-lg-3 animation-1">
+      <h3 class="horizontal-header" >CE QUE L'ON FAIT</h3>
       <p class="horizontal-subtitle">EN TOUTE SIMPLICITÉ</p>
       <p class="line-3"></p>
     </div>
     <div class="col-12 col-lg-9">
-      <h2 class="main-header-2">Fait par et pour<br> les artistes</h2>
+      <h2 class="main-header-2" id="wwd">Fait par et pour<br> les artistes</h2>
       <%= cl_image_tag("j1ymuntctt6klxdkbxox",class:"wwd-img") %>
       <p class="wwd-text">En tant que média indépendant, Que L’Artiste vous emmène dans l’univers des artistes montréalais. Nous proposons une solution au manque de diffusion pour les créateurs.</p>
     </div>
@@ -37,7 +37,7 @@
 
     <%= render "nouveautes/carousel" %>
 
-
+<p id="artistes"></p>
     <%= render "artistes/artistes_carousel"%>
 
 

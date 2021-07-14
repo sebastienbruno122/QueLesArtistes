@@ -7,11 +7,14 @@ ul {
 }
 
 .interview-index {
-  /* display: flex; */
-  /* justify-content: center; */
 
 }
 
+.carousel-position {
+  position: relative;
+  left: 200px;
+  top: 400px;
+}
 
 .horizontal-entrevue-n {
   transform: rotate(-90deg);
@@ -57,3 +60,15 @@ ul {
     transform: rotate(-90deg);
     z-index: 7;
   }
+
+  .carousel-position-n{
+    position: relative;
+    left: 110px;
+    top: 200px;
+  }
+
+//   .carousel-position {
+//     position: relative;
+//     left: 100px;
+//     top: -50px;
+// }

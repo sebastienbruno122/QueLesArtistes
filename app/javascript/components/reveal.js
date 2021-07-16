@@ -1,6 +1,6 @@
-const sr = ScrollReveal();
+// const sr = ScrollReveal();
 
-sr.reveal('h1', {
-  origin: 'top',
-  duration: 2000
-});
+// sr.reveal('h1', {
+//   origin: 'top',
+//   duration: 2000
+// });

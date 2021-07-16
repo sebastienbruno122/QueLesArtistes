@@ -698,7 +698,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (min-width: 300px) and (max-width: 575.98px) {
 
 .carousel-body {
     height: 600px;
@@ -803,7 +803,10 @@ input:nth-of-type(5):checked ~ main#carousel {
 }
 
 .item img{
- border-radius: 50px;
+ border-radius: 25px;
+ width: 200px;
+ height: 200px;
+
 }
 
 .item h2{

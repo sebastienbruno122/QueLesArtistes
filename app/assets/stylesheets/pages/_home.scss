@@ -9,14 +9,22 @@ html, body {
 
 @media (min-width: 1200px) {
 
-  .animation-1 {
+  h1 {
   position: relative;
-  animation-name: example;
-  animation-duration: 2s;
-  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  visibility: visible;
+  -webkit-transform: translateY(0) scale(1);
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 2s cubic-bezier(0.6, 0.2, 0.1, 1) 0, opacity 2s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+  transition: transform 2s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 2s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+
+  // animation-name: example;
+  // animation-duration: 5s;
+  // animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
   // animation-delay: 2s;
   // animation-iteration-count: infinite;
-  animation-direction: reverse;
+  // animation-direction: reverse;
 }
 
   .animation-2 {
@@ -1116,8 +1124,7 @@ html, body {
     width: 100%;
   }
 }
-
-@media (max-width: 575.98px) {
+@media (min-width: 300px) and (max-width: 575.98px) {
 
     .home-1 {
       position: relative;
@@ -1154,19 +1161,18 @@ html, body {
   }
   .text-welcome {
       position: absolute;
-      top: 80px;
-      right: -25px;
-      width: 37%;
+      top: 115px;
+      right: 73px;
+      width: 70%;
   }
   .youtube-home {
     position: relative;
-    right: -141px;
+    right: -26px;
     top: 240px;
     border-radius: 10px;
     z-index: 1;
-    width: 60%;
+    width: 90%;
     height: 300px;
-
   }
 
     .social-links {
@@ -1196,13 +1202,13 @@ html, body {
   .wwd-img {
     position: absolute;
     top: 370px;
-    right: 120px;
+    right: 75px;
   }
   .wwd-text {
-    position: absolute;
-    top: 700PX;
-    right: 153PX;
-    width: 42%;
+      position: absolute;
+      top: 740PX;
+      right: 77PX;
+      width: 67%;
   }
 
   .carousel-position-home {

@@ -6,14 +6,10 @@ ul {
   list-style: none;
 }
 
-.interview-index {
-
-}
-
-.carousel-position {
+.carousel-position{
   position: relative;
-  left: 200px;
-  top: 400px;
+  left: 100px;
+  bottom: 50px;
 }
 
 .horizontal-entrevue-n {
@@ -67,8 +63,52 @@ ul {
     top: 200px;
   }
 
-//   .carousel-position {
-//     position: relative;
-//     left: 100px;
-//     top: -50px;
-// }
+// lines 
+
+.line-nouveautes-1 {
+  font-family: "Open Sans";
+  text-align: center;
+  position: absolute;
+  width: fit-content;
+  margin: 0 auto;
+  bottom: 75%;
+  right: -15%;
+  top: 460px;
+}
+
+
+.line-nouveautes-1:before {
+    content: "";
+    height: 2px;
+    width: 741px;
+    background: #9f3346;
+    position: absolute;
+    right: 78px;
+    top: 83px;
+    transform: translateY(-50%);
+    z-index: 7;
+  }
+
+  .line-nouveautes-2 {
+  font-family: "Open Sans";
+  text-align: center;
+  position: absolute;
+  width: fit-content;
+  margin: 0 auto;
+  bottom: 75%;
+  right: -15%;
+  top: 500px;
+}
+
+
+.line-nouveautes-2:before {
+    content: "";
+    height: 2px;
+    width: 500px;
+    background: #9f3346;
+    position: absolute;
+    right: -26px;
+    bottom: 120px;
+    transform: rotate(-90deg);
+    z-index: 7;
+  }

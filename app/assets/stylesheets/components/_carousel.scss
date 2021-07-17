@@ -811,7 +811,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 .item h2{
   font-size: 24px;
-  text-align: center;
+  text-align: start;
   font-family: Montserrat;
   font-weight: 700;
   margin-top: 20px;
@@ -819,7 +819,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 .item h4{
   font-size: 18px;
-  text-align: center;
+  text-align: start;
   font-family: Montserrat;
   font-weight: 300;
   }

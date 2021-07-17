@@ -1,21 +1,23 @@
-<h1> new</h1>
+<h1> Create a new artist</h1>
 <div class="container">
   <div class="row">
     <div class="col-6 offset-3">
       <%= simple_form_for @artiste do |f| %>
-        <%= f.input :name %>
+        <%= f.input :name, label: 'Name of the artist', error: 'Name is mandatory, please specify one' %>
         <%= f.input :genre %>
         <%= f.input :biography %>
         <%= f.input :description %>
-        <%= f.input :les_dessous %>
-        <%= f.input :youtube_link %>
-        <%= f.input :youtube_nouveaute1 %>
-        <%= f.input :youtube_nouveaute2 %>
-        <%= f.input :youtube_nouveaute3 %>
-        <%= f.input :youtube_nouveaute4 %>
-        <%= f.input :photo, as: :file %>
-        <%= f.input :reseau1, as: :file %>
-        <%= f.input :reseau2, as: :file %>
+        <%= f.input :les_dessous, label: 'Les dessous de l´entrevue'%>
+        <%= f.input :youtube_link , label: 'Vidéo de redirection youtube' %>
+        <%= f.input :youtube_nouveaute1 , label: 'Vidéo youtube 1: section videos' %>
+        <%= f.input :youtube_nouveaute2 , label: 'Vidéo youtube 2: section videos'%>
+        <%= f.input :youtube_nouveaute3 , label: 'Vidéo youtube 3: section videos'%>
+        <%= f.input :youtube_nouveaute4 , label: 'Vidéo youtube 4: section videos'%>
+        <%= f.input :instagram_link %> 
+        <%= f.input :spotify_link%>
+        <%= f.input :photo, as: :file, label: 'Photo Artiste - Dimention : 630px : 420px' %>
+        <%= f.input :reseau1, as: :file, label: 'Screenshot instagram' %>
+        <%= f.input :reseau2, as: :file, label: 'Screenshot spotify' %>
         <%= f.submit "Create" %>
       <% end %>
     </div>

@@ -8,6 +8,7 @@
       </ol>
     <div class="carousel-inner">
       <% @nouveautes.each_with_index do |nouveaute, i| %>
+        <%= link_to artiste_path(nouveaute), class: "text-decoration-none" do %>
         <div class="carousel-item <%= "active" if i == 0 %>">
           <div class="a_index">
             <div class="artiste_index"> <%=  nouveaute.artiste.name%> </div>
@@ -15,6 +16,7 @@
           </div>
             <%= cl_image_tag nouveaute.artiste.photo.key, height: 400, class: "d-block rounded" %>
         </div>
+      <% end %>
       <% end %>
      </div>
         <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev" style="bottom:-157px;">

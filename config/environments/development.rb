@@ -55,7 +55,9 @@ Rails.application.configure do
 
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
-
+  echo "export SENDGRID_API_KEY='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'" > sendgrid.env
+  echo "sendgrid.env" >> .gitignore
+  source ./sendgrid.env
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
@@ -64,11 +66,11 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors= true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
+    address:              'smtp.sendgrid.net',
+    port:                 465,
     domain:               'gmail.com',
-    user_name:            ENV["GMAIL_EMAIL"],
-    password:             ENV["GMAIL_PASSWORD"],
+    user_name:            ENV["apikey"],
+    password:             ENV["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"],
     authentication:       'plain',
     # enable_starttls_auto: true
   }

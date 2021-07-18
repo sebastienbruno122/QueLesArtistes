@@ -5,6 +5,9 @@ class PagesController < ApplicationController
     @nouveautes = Nouveaute.all
   end
 
+  def show
+    @artiste = Artiste.find(params[:id])
+  end
       private
 
 def artiste_params

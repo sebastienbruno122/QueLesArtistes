@@ -114,11 +114,11 @@ config.action_mailer.perform_deliveries = true
 config.action_mailer.raise_delivery_errors = false
 config.action_mailer.default :charset => "utf-8"
 config.action_mailer.smtp_settings = {
-  address:              'smtp.gmail.com',
+  address:              'smtp.sendgrid.net',
   port:                 587,
-  domain:               'new_app_name.herokuapp.com',
-  user_name:            ENV["GMAIL_EMAIL"],
-  password:             ENV["GMAIL_PASSWORD"],
+  domain:               'quelesartistes.herokuapp.com',
+  user_name:            ENV["apikey"],
+  password:             ENV["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"],
   authentication:       'plain',
   enable_starttls_auto: true
 }

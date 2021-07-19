@@ -28,7 +28,7 @@
 
   .carousel-position{
     position: relative;
-    left: 100px;
+    right: 150px;
     bottom: 50px;
   }
 
@@ -71,7 +71,7 @@
       width: 130px;
       background: #9f3346;
       position: absolute;
-      left: 115px;
+      left: 220px;
       top: -35px;
       transform: rotate(-90deg);
       z-index: 7;
@@ -104,7 +104,7 @@
       background: #9f3346;
       position: absolute;
       right: 78px;
-      top: 83px;
+      top: 225px;
       transform: translateY(-50%);
       z-index: 7;
     }
@@ -127,10 +127,20 @@
       width: 500px;
       background: #9f3346;
       position: absolute;
-      right: -26px;
-      bottom: 120px;
+      right: -80px;
+      // bottom: 65px;
       transform: rotate(-90deg);
       z-index: 7;
+    }
+
+    .animation-2-n {
+      position: relative;
+      animation-name: example;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 4s;
+      // animation-iteration-count: infinite;
+      animation-direction: reverse;
     }
     
  

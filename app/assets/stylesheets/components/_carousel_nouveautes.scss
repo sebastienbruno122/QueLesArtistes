@@ -34,7 +34,7 @@
         font-size: 64px;
         font-weight: 800;
     }
-    
+
     .citations_index{
         text-align: justify;
         font-family: Volkhov;
@@ -43,21 +43,27 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
-    
+
     .genre_index{
         font-size: 18px;
         text-align: center;
         font-weight: 500;
     }
-    
+
     .a_index{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         align-self: center;
     }
-    
+
     .a_index .genre_index .artiste_index{
         align-self: center;
+
+    }
+
+    .carousel-position-index {
+    width: 70%;
+
     }
 }

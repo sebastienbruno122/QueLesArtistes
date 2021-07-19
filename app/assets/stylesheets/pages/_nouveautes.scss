@@ -21,7 +21,7 @@
 
 
 @media (min-width: 1200px) {
-  
+
   ul {
     list-style: none;
   }
@@ -83,7 +83,7 @@
       top: 200px;
     }
 
-  // lines 
+  // lines
 
   .line-nouveautes-1 {
     font-family: "Open Sans";
@@ -103,7 +103,7 @@
       width: 741px;
       background: #9f3346;
       position: absolute;
-      right: 78px;
+      right: -30px;
       top: 225px;
       transform: translateY(-50%);
       z-index: 7;
@@ -135,6 +135,8 @@
 
     .animation-2-n {
       position: relative;
+      top: 200px;
+      right: 100px;
       animation-name: example;
       animation-duration: 2s;
       animation-timing-function: linear;
@@ -142,6 +144,6 @@
       // animation-iteration-count: infinite;
       animation-direction: reverse;
     }
-    
- 
+
+
 }

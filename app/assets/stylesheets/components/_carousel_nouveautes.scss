@@ -5,6 +5,7 @@
 .artiste_index{
     text-align: center;
     font-size: 32px;
+    font-weight: 800;
 }
 
 .citations_index{
@@ -26,26 +27,27 @@
     .a_index {
         width: 700px;
     }
-    
-    .citations_index{
-        text-align: right;
-    }
+
 
     .artiste_index{
         text-align: center;
-        font-size: 32px;
+        font-size: 64px;
+        font-weight: 800;
     }
     
     .citations_index{
-        text-align: center;
+        text-align: justify;
         font-family: Volkhov;
         font-size: 18px;
         font-weight: 400;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     
     .genre_index{
-        font-size: 8px;
+        font-size: 18px;
         text-align: center;
+        font-weight: 500;
     }
     
     .a_index{

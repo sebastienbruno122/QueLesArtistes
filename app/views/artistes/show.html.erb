@@ -86,19 +86,23 @@
       <div class="col-12 col-lg-9">
         <div class="iphones">
           <% if @artiste.reseau1.attached? %>
-            <h3 class="horizontal-show-insta">INSTAGRAM</h3>
-            <%= cl_image_tag("ceyzngimbraboahlorc5",class:"iphone1") %>
-            <%= cl_image_tag @artiste.reseau1.key, crop: :fill, :class => 'img-s-reseau1' %>
+            <div class="iphone1">
+              <h3 class="horizontal-show-insta">INSTAGRAM</h3>
+              <%= cl_image_tag("ceyzngimbraboahlorc5",class:"iphone1bis") %>
+              <%= cl_image_tag @artiste.reseau1.key, crop: :fill, :class => 'img-s-reseau1' %>
+              <div class="redirection_reseaux_insta"><a href="https://www.instagram.com/qla.off/?hl=fr-ca"><i class="fab fa-instagram fa-2x" id="123" ></i></a></div>
+            </div>
           <% end %>
           <% if @artiste.reseau2.attached? %>
-          <h3 class="horizontal-show-spotify">SPOTIFY</h3>
-            <%= cl_image_tag("ceyzngimbraboahlorc5",class:"iphone2") %>
-            <%= cl_image_tag @artiste.reseau2.key, crop: :fill, :class => 'img-s-reseau2' %>
+            <div class="iphone2">
+              <h3 class="horizontal-show-spotify">SPOTIFY</h3>
+                <%= cl_image_tag("ceyzngimbraboahlorc5",class:"iphone2bis") %>
+                <%= cl_image_tag @artiste.reseau2.key, crop: :fill, :class => 'img-s-reseau2' %>
+                <div class="redirection_reseaux_spotify"><a href="https://www.instagram.com/qla.off/?hl=fr-ca"><i class="fab fa-spotify fa-2x"></i></a></div>
+            </div>
           <% end %>
         </div>
           <div class="redirection_reseaux">
-            <div class="redirection_reseaux_insta"><a href="https://www.instagram.com/qla.off/?hl=fr-ca"><i class="fab fa-instagram fa-2x" id="123" ></i></a></div>
-            <div class="redirection_reseaux_spotify"><a href="https://www.instagram.com/qla.off/?hl=fr-ca"><i class="fab fa-spotify fa-2x"></i></a></div>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ class PagesController < ApplicationController
     @artistes = Artiste.all
     @nouveautes = Nouveaute.all
   end
-
+  
   def show
     @artiste = Artiste.find(params[:id])
   end

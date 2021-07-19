@@ -44,21 +44,78 @@
   }
   
   .img-s-reseau2{
-    width: 237px;
-    height: 420px;
-    position: absolute;
-    left: 28px;
-    top: 693px;
+    // width: 90px;
+    // // height: 208px;
+    // position: absolute;
+    // left: 65px;
+    // top: 65px;
+    display: none;
   }
   
   .img-s-reseau1 {
-    width: 237px;
-    height: 420px;
-    position: absolute;
-    left: 27px;
-    top: 104px;
+    // width: 90px;
+    // // height: 208px;
+    // position: absolute;
+    // left: 55px;
+    // top: 65px;
+    display: none;
   }
 
+  .iphone1 , .iphone2 {
+    text-align: center;
+  }
+
+  .iphone1bis , .iphone2bis {
+    display: none;
+  }
+
+  .iphones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+
+
+  .fa-instagram{
+    color: black;
+ }
+ :hover.fa-instagram{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+
+ .fa-tiktok{
+  color: black;
+  }
+  :hover.fa-tiktok{
+  color: #111111;
+  filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+  }
+    
+  .fa-youtube{
+    color: black;
+  }
+  :hover.fa-youtube{
+    color: red;
+  }
+
+  .fa-spotify{
+    color: black;
+  }
+  :hover.fa-spotify{
+   color:  #81b71a;
+  }
+
+  h3.horizontal-show-insta {
+    font-size: 10px;
+  }
+
+  h3.horizontal-show-spotify {
+    font-size: 10px;
+  }
   
 }
   
@@ -98,8 +155,14 @@
       width: 237px;
       height: 420px;
       position: absolute;
-      left: 27px;
-      top: 691px;
+      right: 75px;
+      top: 104px;
+    }
+
+    .iphones{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px;
     }
 
   
@@ -151,7 +214,7 @@
   
     
   
-    .cards{
+    .iphones{
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 50px;
@@ -164,7 +227,7 @@
   
   // contact
   
-    .iphone1 {
+    .iphone1bis {
     margin-right: 250px;
     }
 
@@ -218,7 +281,7 @@
       width: 237px;
       height: 420px;
       position: absolute;
-      left: 544px;
+      left: 590px;
       top: 64px;
     }
 
@@ -256,13 +319,10 @@
     color: black;
     }
     :hover.fa-tiktok{
-      color: #111111;
-  
-      filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
-      }
+    color: #111111;
+    filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+    }
       
-    
-
     .fa-youtube{
       color: black;
     }
@@ -272,10 +332,10 @@
 
     .fa-spotify{
       color: black;
-   }
-   :hover.fa-spotify{
+    }
+    :hover.fa-spotify{
      color:  #81b71a;
-   }
+    }
   
         // lines
   

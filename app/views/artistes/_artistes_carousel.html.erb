@@ -14,11 +14,11 @@
       <input type="radio" name="position" />
       <main id="carousel">
       <% @artistes.each do |artiste| %>
-        <%= link_to artiste_path(artiste), class: "text-decoration-none" do %>
         <div class="item">
           <div class="artiste_home">
         <% if artiste.photo.attached? %>
             <%= cl_image_tag artiste.photo.key, height: 300, width: 300, crop: :fill %>
+        <%= link_to artiste_path(artiste), class: "text-decoration-none" do %>
         <% end %>
         <% end %>
           </div>

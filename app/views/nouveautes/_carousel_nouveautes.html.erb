@@ -10,10 +10,10 @@
       <% @nouveautes.each_with_index do |nouveaute, i| %>
         <div class="carousel-item <%= "active" if i == 0 %>">
           <div class="a_index">
-            <p class="artiste_index"> <%=  nouveaute.artiste.name%> </p>
-            <p class="genre_index"> <%=  nouveaute.artiste.genre%> </p>
-          </div>
+            <div class="artiste_index"> <%=  nouveaute.artiste.name%> </div>
+            <div class="genre_index"> <%=  nouveaute.artiste.genre%> </div>
             <div class="citations_index"> <%=  nouveaute.citation%> </div>
+          </div>
             <%= cl_image_tag nouveaute.artiste.photo.key, height: 400, class: "d-block rounded" %>
         </div>
       <% end %>

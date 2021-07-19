@@ -11,15 +11,15 @@
         <%= f.input :description %>
         <%= f.input :les_dessous %>
         <%= f.input :youtube_link %>
-        <%= f.input :youtube_nouveaute1 %>
-        <%= f.input :youtube_nouveaute2 %>
-        <%= f.input :youtube_nouveaute3 %>
-        <%= f.input :youtube_nouveaute4 %>
+        <%= f.input :youtube_nouveaute1, label: 'Vidéo youtube 1: section videos' %>
+        <%= f.input :youtube_nouveaute2, label: 'Vidéo youtube 2: section videos' %>
+        <%= f.input :youtube_nouveaute3, label: 'Vidéo youtube 3: section videos' %>
+        <%= f.input :youtube_nouveaute4, label: 'Vidéo youtube 4: section videos' %>
         <%= f.input :instagram_link%>
         <%= f.input :spotify_link%>
-        <%= f.input :photo, as: :file %>
-        <%= f.input :reseau1, as: :file %>
-        <%= f.input :reseau2, as: :file %>
+        <%= f.input :photo, as: :file, label: 'Photo Artiste - Dimention : 630px : 420px' %>
+        <%= f.input :reseau1, as: :file, label: 'screenshot insta - Dimention : 237px : 420px'%>
+        <%= f.input :reseau2, as: :file, label: 'screenshot spotify - Dimention : 237px : 420px'%>
         <%= f.button :submit %>
       <% end %>
     </div>

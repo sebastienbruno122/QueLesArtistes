@@ -286,20 +286,22 @@
     }
 
     .redirection_reseaux{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 25px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 25px;
     }
 
-    .redirection_reseaux_insta{
-    position: relative;
-    right: 70px;
+    .redirection_reseaux_insta, {
+      margin-top: 15px;
+      left: 132px;
+      position: absolute;
     }
-
+    
     .redirection_reseaux_spotify{
-    position: relative;
-    left: 55px;
+      display: flex;
+      margin-top: 15px;
+      justify-content: space-around;
     }
 
     

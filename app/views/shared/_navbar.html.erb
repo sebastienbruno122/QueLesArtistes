@@ -1,32 +1,33 @@
-<div class="navbar transparent navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar-block">
+  <div class="navbar transparent navbar-expand-sm navbar-light navbar-lewagon">
+      <%= link_to root_path, class: "logo-navbar" do %>
+        <%= cl_image_tag("xygap41xkfo0pgvps4ri", class: "logo-navbar")%>
+      <% end %>
 
-    <%= link_to root_path, class: "logo-navbar" do %>
-      <%= cl_image_tag("xygap41xkfo0pgvps4ri", class: "logo-navbar")%>
-    <% end %>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
 
-    <div class="collapse navbar-collapse pr-5" id="navbarSupportedContent">
-      <ul class="navbar-nav pr-5 mr-auto">
-        <li class="nav-item active">
-        <strong><%= link_to "Ce que l'on fait", root_path(anchor: 'wwd'), class: "nav-link nav-title text-dark" %></strong>
-        </li>
-        <li class="nav-item">
-          <strong><%= link_to "Nouveautés", nouveautes_path, class: "nav-link nav-title text-dark" %></strong>
-        </li>
-        <li class="nav-item">
-          <strong><%= link_to "Les artistes", root_path(anchor: 'artistes'), class: "nav-link nav-title text-dark" %></strong>
-        </li>
-        <li class="nav-item">
-          <strong><%= link_to "À propos", root_path(anchor: 'about'), class: "nav-link nav-title text-dark" %></strong>
-        </li>
-        <li class="nav-item">
-          <strong><%= link_to "Contact", root_path(anchor: 'contact'), class: "nav-link nav-title text-dark" %></strong>
-        </li>
-        </li>
-      </ul>
-    </div>
+      <div class="collapse navbar-collapse pr-5" id="navbarSupportedContent">
+        <ul class="navbar-nav pr-5 mr-auto">
+          <li class="nav-item active">
+          <strong><%= link_to "Ce que l'on fait", root_path(anchor: 'wwd'), class: "nav-link nav-title text-dark" %></strong>
+          </li>
+          <li class="nav-item">
+            <strong><%= link_to "Nouveautés", nouveautes_path, class: "nav-link nav-title text-dark" %></strong>
+          </li>
+          <li class="nav-item">
+            <strong><%= link_to "Les artistes", root_path(anchor: 'artistes'), class: "nav-link nav-title text-dark" %></strong>
+          </li>
+          <li class="nav-item">
+            <strong><%= link_to "À propos", root_path(anchor: 'about'), class: "nav-link nav-title text-dark" %></strong>
+          </li>
+          <li class="nav-item">
+            <strong><%= link_to "Contact", root_path(anchor: 'contact'), class: "nav-link nav-title text-dark" %></strong>
+          </li>
+          </li>
+        </ul>
+      </div>
   </div>
+</div>

@@ -74,49 +74,6 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
   }
-
-
-  .fa-instagram{
-    color: black;
- }
- :hover.fa-instagram{
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  -webkit-background-clip: text;
-  /* Also define standard property for compatibility */
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
- }
-
- .fa-tiktok{
-  color: black;
-  }
-  :hover.fa-tiktok{
-  color: #111111;
-  filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
-  }
-    
-  .fa-youtube{
-    color: black;
-  }
-  :hover.fa-youtube{
-    color: red;
-  }
-
-  .fa-spotify{
-    color: black;
-  }
-  :hover.fa-spotify{
-   color:  #81b71a;
-  }
-
-  h3.horizontal-show-insta {
-    font-size: 10px;
-  }
-
-  h3.horizontal-show-spotify {
-    font-size: 10px;
-  }
-  
 }
   
   
@@ -143,33 +100,34 @@
         font-weight: 800;
         text-align: center;
       }
-      .img-s-reseau1 {
-      width: 237px;
-      height: 420px;
-      position: absolute;
-      left: 27px;
-      top: 104px;
-    }
+    //   .img-s-reseau1 {
+    //   width: 237px;
+    //   height: 420px;
+    //   position: absolute;
+    //   left: 27px;
+    //   top: 104px;
+    // }
   
-    .img-s-reseau2 {
-      width: 237px;
-      height: 420px;
-      position: absolute;
-      right: 75px;
-      top: 104px;
-    }
+    // .img-s-reseau2 {
+    //   width: 237px;
+    //   height: 420px;
+    //   position: absolute;
+    //   right: 75px;
+    //   top: 104px;
+    // }
 
-    .iphones{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 50px;
-    }
+    // .iphones{
+    //   display: grid;
+    //   grid-template-columns: 1fr 1fr;
+    //   grid-gap: 50px;
+    // }
 
   
     }
   
     // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) { 
+
     .show_artiste{
       padding-top: 200px;
     }
@@ -189,7 +147,7 @@
         width: 557px;
         height: 317px;
         position: absolute;
-        top: 270px
+        top: 270px;
     }
     .main-header-show {
       font-size: 72px;
@@ -212,97 +170,105 @@
     padding-bottom: 150px;
     }
   
+    // IPHONNES On partials 
     
-  
-    .iphones{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 50px;
-    }
-  
     #show-container {
       position: relative;
       top:150px;
     }
+    
+
+
   
   // contact
   
-    .iphone1bis {
-    margin-right: 250px;
-    }
+    // .iphone1bis {
+    // margin-right: 250px;
+    // }
 
     // :hover.iphone1 {
     //   width: 302px;
     //   height: 587px;
     // }
     
-    .horizontal-show-insta {
-      transform: rotate(-90deg);
-      position: absolute;
-      top: 176px;
-      right: 723px;
-      width: 268px;
-      font-weight: 900;
-      font-size: 24px; 
-      font-family: Montserrat;
-      letter-spacing: 20px;
-    }
+    // .horizontal-show-insta {
+    //   transform: rotate(-90deg);
+    //   position: absolute;
+    //   top: 176px;
+    //   right: 723px;
+    //   width: 268px;
+    //   font-weight: 900;
+    //   font-size: 24px; 
+    //   font-family: Montserrat;
+    //   letter-spacing: 20px;
+    // }
     
-    #123 {
-      color: red;
-    }
+    // #123 {
+    //   color: red;
+    // }
     
-    .horizontal-show-spotify {
-      transform: rotate(-90deg);
-      position: absolute;
-      top: 90px;
-      right: 200px;
-      width: 268px;
-      font-weight: 900;
-      font-size: 24px; 
-      font-family: Montserrat;
-      letter-spacing: 20px;
-    }
+    // .horizontal-show-spotify {
+    //   transform: rotate(-90deg);
+    //   position: absolute;
+    //   top: 90px;
+    //   right: 200px;
+    //   width: 268px;
+    //   font-weight: 900;
+    //   font-size: 24px; 
+    //   font-family: Montserrat;
+    //   letter-spacing: 20px;
+    // }
   
-    .img-s-reseau1{
-      width: 237px;
-      height: 420px;
-      position: absolute;
-      left: 28px;
-      top: 64px;
-    }
+    // .img-s-reseau1{
+    //   width: 237px;
+    //   height: 420px;
+    //   position: absolute;
+    //   left: 28px;
+    //   top: 64px;
+    // }
 
-    :hover.img-s-reseau1{
-    }
+    // :hover.img-s-reseau1{
+    // }
     
-    .img-s-reseau2{
-      width: 237px;
-      height: 420px;
-      position: absolute;
-      left: 590px;
-      top: 64px;
-    }
+    // .img-s-reseau2{
+    //   width: 237px;
+    //   height: 420px;
+    //   position: absolute;
+    //   left: 590px;
+    //   top: 64px;
+    // }
 
-    .redirection_reseaux{
+    // .redirection_reseaux{
+    //   display: flex;
+    //   flex-direction: row;
+    //   justify-content: space-around;
+    //   margin-top: 25px;
+    // }
+
+    // .redirection_reseaux_insta, {
+    //   margin-top: 15px;
+    //   left: 132px;
+    //   position: absolute;
+    // }
+    
+    // .redirection_reseaux_spotify{
+    //   display: flex;
+    //   margin-top: 15px;
+    //   justify-content: space-around;
+    // }
+
+
+    .title_logo{
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin-top: 25px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100px;
     }
 
-    .redirection_reseaux_insta, {
-      margin-top: 15px;
-      left: 132px;
-      position: absolute;
+    .ecriture_insta{
+      transform: rotate(-90deg);
     }
-    
-    .redirection_reseaux_spotify{
-      display: flex;
-      margin-top: 15px;
-      justify-content: space-around;
-    }
-
-    
 
   .fa-instagram{
       color: black;

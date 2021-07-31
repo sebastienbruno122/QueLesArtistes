@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_16_091643) do
+ActiveRecord::Schema.define(version: 2021_07_31_162720) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,8 @@ ActiveRecord::Schema.define(version: 2021_07_16_091643) do
     t.string "youtube_nouveaute4"
     t.string "instagram_link"
     t.string "spotify_link"
+    t.string "youtube_link_for_contacts"
+    t.string "tiktok_link"
   end
 
   create_table "nouveautes", force: :cascade do |t|

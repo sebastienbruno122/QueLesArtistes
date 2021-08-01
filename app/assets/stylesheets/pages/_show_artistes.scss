@@ -25,8 +25,8 @@
     width: 100%;
   }
   
-  .bio-s-title, .dessous-s-title{
-    font-size: 24px;
+  .bio-s-title, .dessous-s-title, .artiste-genre{
+    font-size: 26px;
     font-weight: 800;
     font-family: Montserrat;
     margin-top: 60px;
@@ -35,45 +35,15 @@
   }
   
   .bio-s, .dessous-s{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
     font-family: Volkhov;
     margin-bottom: 25px;
     text-align: center;
     //line-height: 36,12px !important;
   }
+
   
-  .img-s-reseau2{
-    // width: 90px;
-    // // height: 208px;
-    // position: absolute;
-    // left: 65px;
-    // top: 65px;
-    display: none;
-  }
-  
-  .img-s-reseau1 {
-    // width: 90px;
-    // // height: 208px;
-    // position: absolute;
-    // left: 55px;
-    // top: 65px;
-    display: none;
-  }
-
-  .iphone1 , .iphone2 {
-    text-align: center;
-  }
-
-  .iphone1bis , .iphone2bis {
-    display: none;
-  }
-
-  .iphones{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-  }
 }
   
   

@@ -34,6 +34,67 @@ filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
 }
 
 
+//  img iphone a pas afficher vu telephone
+
+@media (max-width: 768px) {
+
+.img-s-reseau1 {
+  display: none;
+}
+  
+.img-s-reseau2{
+  display: none;
+}
+
+.img-s-reseau3 {
+  display: none;
+}
+
+.img-s-reseau4 {
+  display: none;
+}
+
+// titre
+
+.ecriture_insta{
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.ecriture_spotify{
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.ecriture_youtube{
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.ecriture_tiktok{
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.iphone1 , .iphone2 {
+  text-align: center;
+}
+
+.iphone1bis , .iphone2bis {
+  display: none;
+}
+
+.iphones{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.title_logo {
+  margin-bottom: 10px;
+}
+}
+
 @media (min-width: 1200px) { 
 
 
@@ -63,7 +124,13 @@ filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
 .img-s-reseau3 {
   position: absolute;
   right: 60px;
-  top: 56px;
+  bottom: 60px;
+}
+
+.img-s-reseau4 {
+  position: absolute;
+  right: 0px;
+  bottom: 60px;
   }
 
 // titre 

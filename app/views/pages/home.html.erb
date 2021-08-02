@@ -78,4 +78,23 @@
     </div>
 
   <%= render "contacts/new" %>
+
+
+   <div>
+    <ul class="admin-sign mr-auto ">
+      <% if user_signed_in? %>
+        <li class="nav-item dropdown ">
+          <div>
+            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-light" %>
+          </div>
+          </div>
+        </li>
+        <% else %>
+        <li class="nav-item">
+          <%= link_to "Admin", new_user_session_path, class: "btn btn-light" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
 </div>

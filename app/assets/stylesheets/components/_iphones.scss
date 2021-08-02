@@ -117,19 +117,19 @@ filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
 
 .img-s-reseau2 {
   position: absolute;
-  right: 60px;
-  top: 56px;
+  right: 61px;
+  top: 63px;
 }
 
 .img-s-reseau3 {
   position: absolute;
-  right: 60px;
-  bottom: 60px;
+  right: 62px;
+  bottom: 63px;
 }
 
 .img-s-reseau4 {
   position: absolute;
-  right: 0px;
+  left: 125px;
   bottom: 60px;
   }
 
@@ -149,6 +149,7 @@ h3.horizontal-show-spotify {
   font-size: 24px; 
   font-family: Montserrat;
   letter-spacing: 20px;
+  font-weight: 900;
 }
 
 .ecriture_spotify{
@@ -156,16 +157,41 @@ h3.horizontal-show-spotify {
   font-size: 24px; 
   font-family: Montserrat;
   letter-spacing: 20px;
+  margin-bottom: 130px;
+  font-weight: 900;
+}
+
+.ecriture_tiktok{
+  transform: rotate(-90deg);
+  font-size: 24px; 
+  font-family: Montserrat;
+  letter-spacing: 20px;
+  margin-bottom: 180px;
+  font-weight: 900;
+}
+
+.ecriture_youtube{
+  transform: rotate(-90deg);
+  font-size: 24px; 
+  font-family: Montserrat;
+  letter-spacing: 20px;
+  margin-bottom: 120px;
+  font-weight: 900;
 }
 // couleur logo insta et spotify
 
 .fa-spotify{
   position: relative;
-  bottom: 45px;
+  bottom: 120px;
 }
 
-.fa-spotify{
+.fa-youtube{
   position: relative;
-  bottom: 45px;
+  bottom: 110px;
+}
+
+.fa-tiktok{
+  position: relative;
+  bottom: 170px;
 }
 }

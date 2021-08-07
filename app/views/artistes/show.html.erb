@@ -14,7 +14,9 @@
         <div>
           <%= cl_image_tag @artiste.photo.key, crop: :fill, :class => 'img-s-artiste' %>
           <div class="card-s-youtube">
-            <%= cl_image_tag @artiste.photo.key, crop: :fill %>
+            <% if @artiste.photo_redirection_youtube.attached? %> 
+              <%= cl_image_tag @artiste.photo_redirection_youtube.key, crop: :fill %>
+            <% end %>
             <div class="card-s-youtube-name">
                 <h2>
                 <%= @artiste.name %>

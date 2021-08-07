@@ -5,4 +5,5 @@ class Artiste < ApplicationRecord
   has_one_attached :reseau2
   has_one_attached :reseau3
   has_one_attached :reseau4
+  has_one_attached :photo_redirection_youtube
 end

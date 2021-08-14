@@ -1381,7 +1381,7 @@ html, body {
 
 #thomas .text_1 {
   position:absolute;
-  bottom:356px;
+  bottom:371px;
   left:0px;
   visibility:hidden;
   color: white;
@@ -1403,17 +1403,16 @@ html, body {
 
   #gizzo .text_2 {
     position:absolute;
-    bottom:356px;
-    left:0px;
+    bottom:371px;
     visibility:hidden;
     color: white;
     background: black;
     width: 295px;
-    font-size: 14px;
+    font-size: 13px;
     height: 271px;
     border-radius: 40px;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     opacity: 0.7;
     }
     
@@ -1424,21 +1423,21 @@ html, body {
     // etienne
 
     #etienne .text_3 {
-      position:absolute;
-      bottom:356px;
-      left:0px;
-      visibility:hidden;
-      color: white;
-      background: black;
-      width: 295px;
-      font-size: 14px;
-      height: 271px;
-      border-radius: 40px;
-      text-align: center;
-      padding: 20px;
-      opacity: 0.7;
-      }
+    position:absolute;
+    bottom:50px;
+    left:0px;
+    visibility:hidden;
+    color: white;
+    background: black;
+    width: 295px;
+    font-size: 13px;
+    height: 271px;
+    border-radius: 40px;
+    text-align: center;
+    padding: 15px;
+    opacity: 0.7;
+    }
       
-      #etienne:hover .text_3 {
-      visibility:visible;
-      }
+    #etienne:hover .text_3 {
+    visibility:visible;
+    }

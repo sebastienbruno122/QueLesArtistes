@@ -1375,3 +1375,70 @@ html, body {
   position: absolute;
   bottom: 0px;
 }
+
+
+// thomas
+
+#thomas .text_1 {
+  position:absolute;
+  bottom:356px;
+  left:0px;
+  visibility:hidden;
+  color: white;
+  background: black;
+  width: 295px;
+  font-size: 14px;
+  height: 271px;
+  border-radius: 40px;
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+  }
+  
+  #thomas:hover .text_1 {
+  visibility:visible;
+  }
+
+  // genevieve 
+
+  #gizzo .text_2 {
+    position:absolute;
+    bottom:356px;
+    left:0px;
+    visibility:hidden;
+    color: white;
+    background: black;
+    width: 295px;
+    font-size: 14px;
+    height: 271px;
+    border-radius: 40px;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+    }
+    
+    #gizzo:hover .text_2 {
+    visibility:visible;
+    }
+
+    // etienne
+
+    #etienne .text_3 {
+      position:absolute;
+      bottom:356px;
+      left:0px;
+      visibility:hidden;
+      color: white;
+      background: black;
+      width: 295px;
+      font-size: 14px;
+      height: 271px;
+      border-radius: 40px;
+      text-align: center;
+      padding: 20px;
+      opacity: 0.7;
+      }
+      
+      #etienne:hover .text_3 {
+      visibility:visible;
+      }

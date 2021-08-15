@@ -11,8 +11,8 @@ puts "Time to create stuff..."
 puts "Time to create artistes..."
 
 file1 = URI.open("http://res.cloudinary.com/dqm9bn33k/image/upload/v1625131548/e1db90lhkohuxuuihuqd.png")
-file2 = URI.open("https://res.cloudinary.com/dqm9bn33k/image/upload/v1625668905/papvsvmxpfrqg3hcz4sz.png")
-file3 = URI.open("https://res.cloudinary.com/dqm9bn33k/image/upload/v1625668903/o1tqfeyvaiwklca2bbfr.png")
+file2 = URI.open("http://res.cloudinary.com/dqm9bn33k/image/upload/v1625131548/e1db90lhkohuxuuihuqd.png")
+file3 = URI.open("http://res.cloudinary.com/dqm9bn33k/image/upload/v1625131548/e1db90lhkohuxuuihuqd.png")
 
 artiste1 = Artiste.create(name: "JOJI REDBACK", youtube_nouveaute1:"https://www.youtube.com/embed/ifjAfjkOyso", youtube_nouveaute2: "https://www.youtube.com/embed/sw50zdhjLXE", youtube_nouveaute3: "https://www.youtube.com/embed/lS7pUb5OSvw", youtube_nouveaute4:"", genre:"ARTISTE COMPOSITEUR/RAPPEUR", youtube_link:"https://www.youtube.com/watch?v=Cp9pk-FkE6E&ab_channel=B20baOfficiel", description:"Joseph Grinda aka Jojiredback est un jeune rappeur d’origine française et australienne. C’est à travers ses textes et sa musique qu’il s’exprime et partage sa vision du monde. Ses nombreux voyages de la Chine au Canada lui ont permis de développer un style qui lui est bien propre", les_dessous:"Réécriture de l’entrevue", biography:"Depuis la parution de son premier album Northwave en 2018, Mike Shabb est inarrêtable. Âgé de 22 ans, le rappeur ne s’est jamais assis sur ses lauriers, pas même après que VICE ait affirmé qu’il incarnait « l'avenir du rap québécois », au tout début de sa carrière. Pour Mike Shabb, la musique et le travail ardu restent la priorité - pas question de se laisser distraire par quoi que ce soit ...")
 Artiste.last.photo.attach(io: file1, filename: 'booba.jpg', content_type: 'image/jpg')

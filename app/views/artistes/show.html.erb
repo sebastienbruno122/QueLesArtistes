@@ -31,6 +31,9 @@
         <% if user_signed_in? %>
          <%= link_to "edit", edit_artiste_path , class: 'btn btn-primary'%>
         <% end %>
+         <% if user_signed_in? %>
+          <%= link_to "Add new nouveautés", new_artiste_nouveaute_path(@artiste) %>
+          <% end %>
     </div>
 
   </div>

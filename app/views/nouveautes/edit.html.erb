@@ -1,8 +1,14 @@
-<h1> edit</h1>
+<div class="container nouveautes_edit">
 
-<div>
-<%= simple_form_for(@nouveaute) do |f| %>
-  <%= f.input :citation %>
-  <%= f.submit "Update" %>
-<% end %>
+  <div>
+    <h1> edit</h1>
+  </div>
+
+    <div>
+    <%= simple_form_for(@nouveaute) do |f| %>
+      <%= f.input :citation %>
+      <%= f.submit "Update" %>
+    <% end %>
+    </div>
+
 </div>

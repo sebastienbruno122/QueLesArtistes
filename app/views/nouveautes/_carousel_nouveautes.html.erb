@@ -13,6 +13,7 @@
             <div class="artiste_index"> <%=  nouveaute.artiste.name%> </div>
             <div class="genre_index"> <%=  nouveaute.artiste.genre%> </div>
             <div class="citations_index"> <%=  nouveaute.citation%> </div>
+            <div> <%=  nouveaute.id%> </div>
           </div>
             <%= cl_image_tag nouveaute.artiste.photo.key, height: 400, class: "d-block rounded" %>
         </div>

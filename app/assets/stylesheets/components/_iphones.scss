@@ -113,40 +113,40 @@ filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
   flex-direction: row;
 }
 
-.img-s-reseau1 {
-  position: absolute;
-  left: 124px;
-  top: 56px;
-}
+// .img-s-reseau1 {
+//   position: absolute;
+//   left: 124px;
+//   top: 56px;
+// }
 
-.img-s-reseau2 {
-  position: absolute;
-  right: 61px;
-  top: 63px;
-}
+// .img-s-reseau2 {
+//   position: absolute;
+//   right: 61px;
+//   top: 63px;
+// }
 
-.img-s-reseau3 {
-  position: absolute;
-  right: 62px;
-  bottom: 63px;
-}
+// .img-s-reseau3 {
+//   position: absolute;
+//   right: 62px;
+//   bottom: 63px;
+// }
 
-.img-s-reseau4 {
-  position: absolute;
-  left: 125px;
-  bottom: 60px;
-  }
+// .img-s-reseau4 {
+//   position: absolute;
+//   left: 125px;
+//   bottom: 60px;
+//   }
 
-// titre 
+// // titre 
 
-h3.horizontal-show-insta {
-  font-size: 10px;
-}
+// h3.horizontal-show-insta {
+//   font-size: 10px;
+// }
 
-h3.horizontal-show-spotify {
-  font-size: 10px;
-  font-weight: 900;
-}
+// h3.horizontal-show-spotify {
+//   font-size: 10px;
+//   font-weight: 900;
+// }
 
 .ecriture_insta{
   transform: rotate(-90deg);
@@ -182,20 +182,25 @@ h3.horizontal-show-spotify {
   margin-bottom: 120px;
   font-weight: 900;
 }
-// couleur logo insta et spotify
+// // couleur logo insta et spotify
 
-.fa-spotify{
+#instagram{
   position: relative;
-  bottom: 120px;
+  bottom: -35px;
+}
+
+#spotify{
+  position: relative;
+  bottom: 80px;
 }
 
 #youtube{
   position: relative;
-  bottom: 110px;
+  bottom: 70px;
 }
 
 #tiktok{
   position: relative;
-  bottom: 170px;
+  bottom: 130px;
 }
 }

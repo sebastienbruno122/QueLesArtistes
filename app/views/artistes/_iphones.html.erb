@@ -4,11 +4,10 @@
               <div class="title_logo">
                 <p class="ecriture_insta">INSTAGRAM</p>
                 <%= link_to @artiste.spotify_link, class:"redirection_reseaux_insta" do%>
-                  <i class="fab fa-instagram fa-2x" ></i>
+                  <i class="fab fa-instagram fa-2x" id="instagram" ></i>
                 <% end %>
               </div>
               <div class="iphone_structure">
-                <%= cl_image_tag("ceyzngimbraboahlorc5",class:"iphone1bis") %>
                     <%= cl_image_tag @artiste.reseau1.key, crop: :fill, :class => 'img-s-reseau1' %>
               </div>
             </div>
@@ -18,11 +17,10 @@
               <div class="title_logo">
                 <p class="ecriture_spotify">SPOTIFY</p>
                 <%= link_to @artiste.spotify_link, class:"redirection_reseaux_spotify" do%>
-                  <i class="fab fa-spotify fa-2x" ></i>
+                  <i class="fab fa-spotify fa-2x" id="spotify"></i>
                 <% end %>
               </div>
               <div class="iphone_structure">
-                <%= cl_image_tag("ceyzngimbraboahlorc5",class:"iphone1bis") %>
                 <%= cl_image_tag @artiste.reseau2.key, crop: :fill, :class => 'img-s-reseau2' %>
               </div>
             </div>
@@ -32,11 +30,10 @@
               <div class="title_logo">
                 <p class="ecriture_youtube">YOUTUBE</p>
                 <%= link_to @artiste.youtube_link_for_contacts, class:"redirection_reseaux_youtube" do%>
-                  <i class="fab fa-youtube fa-2x"id="youtube" ></i>
+                  <i class="fab fa-youtube fa-2x" id="youtube" ></i>
                 <% end %>
               </div>
               <div class="iphone_structure">
-                <%= cl_image_tag("ceyzngimbraboahlorc5",class:"iphone1bis") %>
                 <%= cl_image_tag @artiste.reseau3.key, crop: :fill, :class => 'img-s-reseau3' %>
               </div>
             </div>
@@ -50,7 +47,6 @@
                 <% end %>
               </div>
               <div class="iphone_structure">
-                <%= cl_image_tag("ceyzngimbraboahlorc5",class:"iphone1bis") %>
                 <%= cl_image_tag @artiste.reseau4.key, crop: :fill, :class => 'img-s-reseau4' %>
               </div>
             </div>

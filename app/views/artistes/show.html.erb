@@ -53,6 +53,7 @@
     </div>
   </div>
 
+<% if @artiste.les_dessous != "" %> 
   <div class="dessous">
     <div class="col-12 col-lg-3">
       <p class="dessous-s-title">LES DESSOUS DE L’ENTREVUE</p>
@@ -64,8 +65,9 @@
         <p class="dessous-s"> <%= @artiste.les_dessous %></p>
     </div>
   </div>
+<% end %>
 
-
+<% if (@artiste.youtube_nouveaute1 || @artiste.youtube_nouveaute2 || @artiste.youtube_nouveaute3 || @artiste.youtube_nouveaute4) != "" %> 
   <div class="dernieres">
     <div class="col-12 col-lg-3">
       <p class="dessous-s-title">DERNIÈRES SORTIES</p>
@@ -77,6 +79,7 @@
       <%= render partial: 'artistes/youtube', locals: {artiste: @partiste, youtube_nouveaute1: @youtube_nouveaute1, user: @user} %>
     </div>
   </div>
+<% end %>
 
     <div class="contact">
 

@@ -61,6 +61,6 @@ class ArtistesController < ApplicationController
   private
 
   def artiste_params
-    params.require(:artiste).permit(:name, :genre, :biography, :photo, :youtube_link, :description, :les_dessous, :youtube_nouveaute1, :youtube_nouveaute2, :youtube_nouveaute3, :youtube_nouveaute4, :reseau1, :reseau2, :reseau3, :reseau4, :instagram_link, :spotify_link, :photo_redirection_youtube)
+    params.require(:artiste).permit(:name, :genre, :biography, :photo, :youtube_link, :description, :les_dessous, :youtube_nouveaute1, :youtube_nouveaute2, :youtube_nouveaute3, :youtube_nouveaute4, :reseau1, :reseau2, :reseau3, :reseau4, :reseau5, :reseau6, :instagram_link, :spotify_link, :photo_redirection_youtube)
   end
 end

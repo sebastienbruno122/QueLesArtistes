@@ -3,7 +3,7 @@
             <div class="iphone1">
               <div class="title_logo">
                 <p class="ecriture_insta">INSTAGRAM</p>
-                <%= link_to @artiste.instagram_link, class:"redirection_reseaux_insta" do%>
+                <%= link_to @artiste.instagram_link,target="_blank", class:"redirection_reseaux_insta" do%>
                   <i class="fab fa-instagram fa-2x" id="instagram" ></i>
                 <% end %>
               </div>
@@ -48,6 +48,19 @@
               </div>
               <div class="iphone_structure">
                 <%= cl_image_tag @artiste.reseau4.key, crop: :fill, :class => 'img-s-reseau4' %>
+              </div>
+            </div>
+          <% end %>
+          <% if @artiste.reseau5.attached? %> 
+            <div class="iphone1">
+              <div class="title_logo">
+                <p class="ecriture_tiktok">VIMEO</p>
+                <%= link_to @artiste.vimeo_link, class:"redirection_reseaux_vimeo" do%>
+                  <i class="fab fa-vimeo fa-2x", id="tiktok" ></i>
+                <% end %>
+              </div>
+              <div class="iphone_structure">
+                <%= cl_image_tag @artiste.reseau5.key, crop: :fill, :class => 'img-s-reseau4' %>
               </div>
             </div>
           <% end %>

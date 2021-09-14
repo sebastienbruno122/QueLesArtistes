@@ -3,7 +3,7 @@
             <div class="iphone1">
               <div class="title_logo">
                 <p class="ecriture_insta">INSTAGRAM</p>
-                <%= link_to @artiste.instagram_link,target="_blank", class:"redirection_reseaux_insta" do%>
+                <%= link_to @artiste.instagram_link, target: "_blank", class:"redirection_reseaux_insta" do%>
                   <i class="fab fa-instagram fa-2x" id="instagram" ></i>
                 <% end %>
               </div>
@@ -16,7 +16,7 @@
             <div class="iphone1">
               <div class="title_logo">
                 <p class="ecriture_spotify">SPOTIFY</p>
-                <%= link_to @artiste.spotify_link, class:"redirection_reseaux_spotify" do%>
+                <%= link_to @artiste.spotify_link, target: "_blank",class:"redirection_reseaux_spotify" do%>
                   <i class="fab fa-spotify fa-2x" id="spotify"></i>
                 <% end %>
               </div>
@@ -29,7 +29,7 @@
             <div class="iphone1">
               <div class="title_logo">
                 <p class="ecriture_youtube">YOUTUBE</p>
-                <%= link_to @artiste.youtube_link_for_contacts, class:"redirection_reseaux_youtube" do%>
+                <%= link_to @artiste.youtube_link_for_contacts, target: "_blank", class:"redirection_reseaux_youtube" do%>
                   <i class="fab fa-youtube fa-2x" id="youtube" ></i>
                 <% end %>
               </div>
@@ -42,7 +42,7 @@
             <div class="iphone1">
               <div class="title_logo">
                 <p class="ecriture_tiktok">TIKTOK</p>
-                <%= link_to @artiste.tiktok_link, class:"redirection_reseaux_tiktok" do%>
+                <%= link_to @artiste.tiktok_link,target: "_blank", class:"redirection_reseaux_tiktok" do%>
                   <i class="fab fa-tiktok fa-2x", id="tiktok" ></i>
                 <% end %>
               </div>
@@ -55,12 +55,25 @@
             <div class="iphone1">
               <div class="title_logo">
                 <p class="ecriture_tiktok">VIMEO</p>
-                <%= link_to @artiste.vimeo_link, class:"redirection_reseaux_vimeo" do%>
+                <%= link_to @artiste.vimeo_link,target: "_blank", class:"redirection_reseaux_vimeo" do%>
                   <i class="fab fa-vimeo fa-2x", id="tiktok" ></i>
                 <% end %>
               </div>
               <div class="iphone_structure">
                 <%= cl_image_tag @artiste.reseau5.key, crop: :fill, :class => 'img-s-reseau4' %>
+              </div>
+            </div>
+          <% end %>
+          <% if @artiste.reseau6.attached? %> 
+            <div class="iphone1">
+              <div class="title_logo">
+                <p class="ecriture_tiktok">FACEBOOK</p>
+                <%= link_to @artiste.facebook_link,target: "_blank",class:"redirection_reseaux_vimeo" do%>
+                  <i class="fab fa-facebook fa-2x", id="tiktok" ></i>
+                <% end %>
+              </div>
+              <div class="iphone_structure">
+                <%= cl_image_tag @artiste.reseau6.key, crop: :fill, :class => 'img-s-reseau4' %>
               </div>
             </div>
           <% end %>

@@ -8,4 +8,5 @@ class Artiste < ApplicationRecord
   has_one_attached :reseau5
   has_one_attached :reseau6
   has_one_attached :photo_redirection_youtube
+  validates :name, :genre, :photo, :photo_redirection_youtube, presence: true
 end

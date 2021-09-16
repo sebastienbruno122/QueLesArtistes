@@ -38,8 +38,11 @@ class ArtistesController < ApplicationController
 
   def create
     @artiste = Artiste.new(artiste_params)
-    @artiste.save
-    redirect_to artiste_path(@artiste)
+    if @artiste.save
+      redirect_to artiste_path(@artiste.id)
+    else
+      render :new
+    end
   end
 
   def edit

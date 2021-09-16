@@ -215,10 +215,10 @@
       width: fit-content;
       margin: 0 auto;
       bottom: 75%;
-      left: 66%;
+      left: 77%;
       top: 0px;
     }
-    .line-3-show:before, .line-4-show:before, .line-5-show:before, .line-6-show:before {
+    .line-3-show:before, .line-4-show:before, .line-5-show:before {
       content: "";
       height: 2px;
       width: 228px;
@@ -229,6 +229,18 @@
       transform: rotate(-90deg);
       z-index: 7;
       }
+
+      .line-6-show:before {
+        content: "";
+        height: 2px;
+        width: 228px;
+        background: #9f3346;
+        position: absolute;
+        left: -66px;
+        top: 30%;
+        transform: rotate(-90deg);
+        z-index: 7;
+        }
   
       .line-3-show-bis, .line-4-show-bis, .line-5-show-bis {
       font-family: "Open Sans";

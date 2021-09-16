@@ -14,7 +14,7 @@
             <div class="genre_index"> <%=  nouveaute.artiste.genre%> </div>
           <% if user_signed_in? %>
             <div class="citations_index"> <%=  nouveaute.citation%> 
-         <%# <%= link_to "edit", edit_nouveaute_path([nouveaute.id]) , class: 'btn-nouveautes'%> %>
+         <%= link_to "edit", edit_nouveaute_path([nouveaute.id]) , class: 'btn-nouveautes'%>
         <% end %></div>
           </div>
             <%# <%= cl_image_tag nouveaute.artiste.photo_redirection_youtube.key, height: 400, class: "d-block rounded" %> %>
